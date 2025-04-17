@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CA Rohan Solanki | Chartered Accountant & Career Counsellor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Old Money Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Old Money Color Palette */
+    body { font-family: 'Lora', serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .accent { color: #203731; }      /* deep forest green */
+    .bg-primary { background-color: #f4f1ee; } /* warm off-white */
+    .highlight { color: #bfa26b; }   /* muted gold */
+    .bg-accent { background-color: #203731; } /* button background */
+  </style>
+</head>
+<body class="bg-primary text-gray-800">
+  <!-- Disclaimer Modal -->
+  <div id="disclaimerModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white p-8 max-w-lg rounded-xl shadow-lg">
+      <h2 class="text-xl font-bold mb-4 accent">Disclaimer</h2>
+      <p class="text-sm mb-4">
+        The Institute of Chartered Accountants of India does not permit advertisement or solicitation by Chartered Accountants in any form or manner. By accessing this website, you acknowledge and confirm that you are seeking information relating to CA Rohan Solanki on your own accord and that there has been no form of solicitation, advertisement or inducement.
+      </p>
+      <p class="text-sm mb-4">
+        The contents of this website are for informational purposes only and should not be interpreted as soliciting or advertising. No information provided on this website should be used or construed as substitute of professional advice. CA Rohan Solanki shall not be liable for consequences of any action taken by relying on the information provided on this website. It is recommended that the readers should take professional advice before acting on the same.
+      </p>
+      <p class="text-sm mb-4">
+        The contents of this website are the intellectual property of CA Rohan Solanki.
+      </p>
+      <div class="flex items-center">
+        <input type="checkbox" id="agreeCheckbox" class="mr-2">
+        <label for="agreeCheckbox" class="text-sm">I have read and understood above and I agree with the terms of usage of this website.</label>
+      </div>
+      <button onclick="closeDisclaimer()" id="proceedBtn" class="mt-4 px-4 py-2 bg-accent text-white rounded disabled:opacity-50" disabled>Proceed</button>
+    </div>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('agreeCheckbox');
+    const proceedBtn = document.getElementById('proceedBtn');
+    checkbox.addEventListener('change', () => {
+      proceedBtn.disabled = !checkbox.checked;
+    });
+    function closeDisclaimer() {
+      document.getElementById('disclaimerModal').style.display = 'none';
+    }
+  </script>
+
+  <!-- Header / Hero -->
+  <header class="bg-primary border-b border-gray-200">
+    <div class="container mx-auto max-w-4xl px-6 py-12 text-center">
+      <h1 class="text-5xl font-bold accent mb-2">CA Rohan Solanki</h1>
+      <p class="text-lg text-gray-700 mb-4">B.Com, M.Com, LLB, ACA, Diploma in Taxation Law</p>
+      <p class="text-xl italic text-gray-700">Chartered Accountant & Student Career Counsellor</p>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="py-16">
+    <div class="container mx-auto max-w-5xl px-6">
+      <h2 class="text-4xl font-semibold text-center accent mb-12">Our Services</h2>
+      <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">Tax Planning & Compliance</h3>
+          <p>Advisory, filing &amp; optimization for personal and corporate taxes under Indian regulations.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">Audit & Assurance</h3>
+          <p>Statutory and internal audits ensuring complete accuracy and regulatory adherence.</p>
+        </div>
+        <!-- Additional service cards unchanged -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">GST Registration &amp; Returns</h3>
+          <p>Seamless GST onboarding, compliance management and timely filings.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">Financial Advisory</h3>
+          <p>Budgeting, forecasting &amp; modeling to support strategic growth initiatives.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">Compliance Audits</h3>
+          <p>Due diligence, risk assessment &amp; compliance reviews tailored to your business.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold accent mb-4">Business Setup Advisory</h3>
+          <p>Guiding startups through incorporation, registrations &amp; regulatory clearances.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Counselling -->
+  <section id="career-counselling" class="bg-primary py-16">
+    <div class="container mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-4xl font-semibold accent mb-8">Career Counselling</h2>
+      <p class="mb-6">Personalised guidance for school students aspiring to CA, CS, CMA &amp; commerce streams, drawing on over a decade of professional expertise.</p>
+      <ul class="list-none space-y-4 text-left">
+        <li class="flex"><span class="mr-3 text-lg highlight">•</span><div><strong>Course Roadmap:</strong> Structured plan from Grade 10 through professional exams.</div></li>
+        <li class="flex"><span class="mr-3 text-lg highlight">•</span><div><strong>Exam Strategies:</strong> Proven techniques for CA Foundation, IPCC &amp; Final success.</div></li>
+        <li class="flex"><span class="mr-3 text-lg highlight">•</span><div><strong>Skill Workshops:</strong> Communication, analytical &amp; leadership training.</div></li>
+        <li class="flex"><span class="mr-3 text-lg highlight">•</span><div><strong>Professional Path:</strong> Internships, certifications &amp; long-term goal setting.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16">
+    <div class="container mx-auto max-w-5xl px-6">
+      <h2 class="text-4xl font-semibold text-center accent mb-12">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+        <div><strong class="highlight">✔ Trusted Expertise:</strong> Led by a qualified CA with a proven track record in financial and academic domains.</div>
+        <div><strong class="highlight">✔ Personalized Approach:</strong> Tailored services and counselling based on individual client/student needs.</div>
+        <div><strong class="highlight">✔ Professional Integrity:</strong> Ethical, confidential and transparent practices in all engagements.</div>
+        <div><strong class="highlight">✔ Holistic Guidance:</strong> From tax to career mentoring – comprehensive and well-rounded support.</div>
+        <div><strong class="highlight">✔ Accessible Support:</strong> Prompt communication and responsive assistance at every stage.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16">
+    <div class="container mx-auto max-w-4xl px-6">
+      <h2 class="text-4xl font-semibold text-center accent mb-12">Testimonials</h2>
+      <div class="space-y-10">
+        <div class="italic border-l-4 border-highlight pl-6">
+          “CA Rohan’s strategic tax planning saved our firm substantial amounts. A true professional.”
+          <p class="mt-4 font-semibold text-gray-900">— Mr. Anil Mehta</p>
+        </div>
+        <div class="italic border-l-4 border-highlight pl-6">
+          “The career guidance was instrumental in my CA journey. His insights were invaluable.”
+          <p class="mt-4 font-semibold text-gray-900">— Riya Sharma, Student</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-primary py-16">
+    <div class="container mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-4xl font-semibold accent mb-6">Get in Touch</h2>
+      <div class="mt-8 text-center text-gray-700 space-y-2">
+        <p><strong>Phone:</strong> +91-9694472811</p>
+        <p><strong>Email:</strong> carohansolanki@gmail.com</p>
+        <p><strong>Address:</strong> 266/SH-B/40, First Floor, Pratap Nagar, Sec-26, Rana Sanga Road, Jaipur-302033</p>
+        <p><strong>Website:</strong> <a href="https://www.carohansolanki.com" class="underline">www.carohansolanki.com</a></p>
+        <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@carohansolanki" class="underline">@carohansolanki</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/carohansolanki" class="underline">@carohansolanki</a></p>
+      </div>
+      <p class="mt-6 text-gray-600 italic">Resilience &middot; Vision &middot; Success</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-6">
+    <div class="container mx-auto max-w-4xl px-6 text-center text-sm">
+      <p>&copy; 2025 CA Rohan Solanki. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
