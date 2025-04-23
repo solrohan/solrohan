@@ -1,0 +1,21 @@
+{
+  "name": "CA Rohan Solanki ",
+  "short_name": "CA.RS",
+  "icons": [
+    {
+      "src": "/https://carohansolanki.com/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/https://carohansolanki.com/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#fcf9f9",
+  "display": "standalone"
+}
