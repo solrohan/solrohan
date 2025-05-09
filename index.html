@@ -29,7 +29,7 @@
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Favicon for devices -->
+  <!-- Favicon for Devices -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -286,49 +286,38 @@
               <div class="absolute inset-0 bg-gradient-to-br from-accent/30 via-accent/10 to-highlight/30"></div>
 
               <!-- Stats Overlay Bar -->
-              <div class="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-6" data-aos="fade-up">
-                <div class="grid grid-cols-4 gap-8">
+              <div class="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 sm:p-4 md:p-6" data-aos="fade-up">
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
                   <!-- Experience -->
-                  <div class="flex items-center gap-3">
-                    <div class="bg-white/20 p-3 rounded-lg">
-                      <i class="fas fa-clock text-white text-xl"></i>
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-clock text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-white/80">Years Experience</div>
-                      <div class="text-xl font-bold text-white">10+</div>
-                    </div>
-                  </div>
-
-                  <!-- Success Rate -->
-                  <div class="flex items-center gap-3">
-                    <div class="bg-white/20 p-3 rounded-lg">
-                      <i class="fas fa-chart-line text-white text-xl"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-white/80">Success Rate</div>
-                      <div class="text-xl font-bold text-white">90%</div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Years Experience</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">10+</div>
                     </div>
                   </div>
 
                   <!-- Happy Clients -->
-                  <div class="flex items-center gap-3">
-                    <div class="bg-white/20 p-3 rounded-lg">
-                      <i class="fas fa-users text-white text-xl"></i>
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-users text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-white/80">Happy Clients</div>
-                      <div class="text-xl font-bold text-white">1000+</div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Happy Clients</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">1000+</div>
                     </div>
                   </div>
 
                   <!-- Rating -->
-                  <div class="flex items-center gap-3">
-                    <div class="bg-white/20 p-3 rounded-lg">
-                      <i class="fas fa-star text-white text-xl"></i>
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-star text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-white/80">Google Rating</div>
-                      <div class="text-xl font-bold text-white">4.8/5</div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Google Rating</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">4.8/5</div>
                     </div>
                   </div>
                 </div>
@@ -499,12 +488,12 @@
             <div class="absolute bottom-4 left-4 flex items-center space-x-3 z-10">
               <div class="relative bg-[#203731] rounded-full shadow-lg w-16 h-16 flex items-center justify-center">
                 <div class="relative flex flex-col items-center justify-center">
-                  <span class="font-extrabold text-2xl text-white leading-none">90%</span>
-                  <span class="text-[11px] text-white font-semibold leading-none">Success</span>
+                  <span class="font-extrabold text-2xl text-white leading-none">1000+</span>
+                  <span class="text-[11px] text-white font-semibold leading-none">Clients</span>
                 </div>
               </div>
               <div class="bg-white bg-opacity-95 rounded-lg px-3 py-2 shadow-lg border border-highlight">
-                <span class="text-xs text-accent font-semibold">of our students achieve their career goals</span>
+                <span class="text-xs text-accent font-semibold">trusted our services</span>
               </div>
             </div>
           </div>
@@ -998,20 +987,30 @@
             </div>
             
             <div class="mt-8 pt-6 border-t border-white border-opacity-20">
-              <h4 class="font-semibold mb-3">Business Hours</h4>
-                <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="font-semibold">Business Hours</h4>
+                <div id="statusIndicator" class="flex items-center">
+                  <div class="flex items-center px-4 py-1.5 rounded-full bg-green-400/10 border border-green-400/20 transform transition-all duration-300 hover:scale-105">
+                    <span class="relative flex h-3 w-3 mr-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span id="statusText" class="text-sm font-medium text-green-400 animate-pulse">Open Now</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
                 <div>
                   <p class="font-medium">Monday - Friday</p>
-                    <p class="text-gray-100">10:00 AM - 6:00 PM</p>
+                  <p class="text-gray-100">10:00 AM - 6:00 PM</p>
                 </div>
                 <div>
                   <p class="font-medium">Saturday</p>
-                    <p class="text-gray-100">10:00 AM - 2:00 PM</p>
+                  <p class="text-gray-100">10:00 AM - 2:00 PM</p>
                 </div>
                 <div class="col-span-2">
                   <p class="font-medium">Sunday</p>
-                    <p class="text-gray-100">Closed</p>
-                </div>
+                  <p class="text-gray-100">Closed</p>
                 </div>
               </div>
             </div>
@@ -1024,7 +1023,7 @@
   <!-- Footer -->
   <footer class="bg-accent text-white py-12">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <!-- Brand Section -->
         <div class="space-y-4">
           <div class="flex items-center">
@@ -1181,6 +1180,53 @@
         easing: 'ease-in-out',
         once: true
       });
+      
+      // Business Hours Status Check
+      function updateBusinessStatus() {
+        const now = new Date();
+        const day = now.getDay(); // 0 is Sunday, 1-6 are Monday-Saturday
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const currentTime = hour + (minute / 60);
+        
+        const statusIndicator = document.getElementById('statusIndicator');
+        const statusText = document.getElementById('statusText');
+        
+        let isOpen = false;
+        
+        if (day === 0) { // Sunday
+          isOpen = false;
+        } else if (day === 6) { // Saturday
+          isOpen = currentTime >= 10 && currentTime < 14;
+        } else { // Monday to Friday
+          isOpen = currentTime >= 10 && currentTime < 18;
+        }
+        
+        if (isOpen) {
+          statusIndicator.innerHTML = `
+            <div class="flex items-center px-4 py-1.5 rounded-full bg-green-400/10 border border-green-400/20 transform transition-all duration-300 hover:scale-105">
+              <span class="relative flex h-3 w-3 mr-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </span>
+              <span class="text-sm font-medium text-green-400 animate-pulse">Open Now</span>
+            </div>
+          `;
+        } else {
+          statusIndicator.innerHTML = `
+            <div class="flex items-center px-4 py-1.5 rounded-full bg-red-400/10 border border-red-400/20 transform transition-all duration-300 hover:scale-105">
+              <span class="relative flex h-3 w-3 mr-2.5">
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+              </span>
+              <span class="text-sm font-medium text-red-400">Closed</span>
+            </div>
+          `;
+        }
+      }
+      
+      // Update status immediately and then every minute
+      updateBusinessStatus();
+      setInterval(updateBusinessStatus, 60000);
       
       // Modal logic
       const checkbox = document.getElementById('agreeCheckbox');
