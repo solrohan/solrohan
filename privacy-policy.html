@@ -9,9 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
+    html, body {width: auto!important; overflow-x: hidden!important} 
     body { 
       font-family: 'Lora', serif;
+      scroll-behavior: smooth;
     }
     h1, h2, h3, h4 { 
       font-family: 'Playfair Display', serif;
@@ -21,129 +25,304 @@
     .bg-primary { background-color: #f9f7f5; }
     .highlight { color: #bfa26b; }
     .bg-accent { background-color: #203731; }
+    .icon-accent {color: #bfa26b;}
+    .text-accent { color: #203731; }
+    .border-accent { border-color: #203731; }
+    .bg-highlight { background-color: #bfa26b; }
+    .border-highlight { border-color: #bfa26b; }
+    .text-highlight { color: #bfa26b; }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #bfa26b;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
   </style>
 </head>
 <body class="bg-primary">
-  <!-- Header -->
-  <header class="bg-accent text-white py-6">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+  <!-- Navbar -->
+  <nav class="fixed top-0 inset-x-0 bg-white shadow-sm z-40 transition-all duration-300">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-3">
       <div class="flex items-center justify-between">
-        <a href="index.html" class="text-xl font-bold flex items-center">
-          <img src="./favicon.svg" alt="CA Logo" class="h-10 w-10 mr-3">
-          <span>CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+        <a href="index.html" class="text-xl sm:text-2xl font-bold accent flex items-center">
+          <img src="./favicon.svg" alt="CA Logo" class="h-10 w-10 sm:h-12 sm:w-12 mr-3">
+          <span class="hidden sm:inline">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+          <span class="sm:hidden">CA ROHAN SOLANKI</span>
         </a>
+        <div class="flex items-center space-x-6">
+          <a href="index.html" class="nav-link hover:text-accent">Home</a>
+          <a href="terms.html" class="nav-link hover:text-accent">Terms</a>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
 
   <!-- Main Content -->
-  <main class="max-w-screen-xl mx-auto px-4 sm:px-6 py-12">
-    <div class="bg-white rounded-xl shadow-lg p-8">
-      <h1 class="text-3xl font-bold accent mb-8">Privacy Policy</h1>
-      
-      <div class="prose max-w-none">
-        <p class="text-gray-600 mb-6">Last updated: March 2024</p>
+  <main class="pt-24 pb-12">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+      <!-- Header Section -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold accent mb-4">Privacy Policy</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">Your privacy is our priority. Learn how we protect and manage your information.</p>
+      </div>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">1. Introduction</h2>
-          <p class="text-gray-700 mb-4">
+      <!-- Content Cards -->
+      <div class="grid gap-8">
+        <!-- Introduction -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent p-3 rounded-full mr-4">
+              <i class="fas fa-shield-alt text-white"></i>
+            </div>
+            <h2 class="text-2xl font-semibold accent">1. Introduction</h2>
+          </div>
+          <p class="text-gray-700">
             CA Rohan Vijay Solanki & Associates ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
-        </section>
+        </div>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">2. Information We Collect</h2>
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold accent">2.1 Personal Information</h3>
-            <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Name and contact information</li>
-              <li>Business details and financial information</li>
-              <li>Tax-related documents and information</li>
-              <li>Communication preferences</li>
-            </ul>
-
-            <h3 class="text-xl font-semibold accent">2.2 Professional Information</h3>
-            <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Educational background</li>
-              <li>Professional qualifications</li>
-              <li>Career counseling preferences</li>
-              <li>Service requirements</li>
-            </ul>
+        <!-- Information Collection -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent p-3 rounded-full mr-4">
+              <i class="fas fa-database text-white"></i>
+            </div>
+            <h2 class="text-2xl font-semibold accent">2. Information We Collect</h2>
           </div>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">3. How We Use Your Information</h2>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li>To provide professional services as per your requirements</li>
-            <li>To communicate about our services and updates</li>
-            <li>To comply with legal and regulatory requirements</li>
-            <li>To improve our services and website experience</li>
-            <li>To provide career counseling and guidance</li>
-          </ul>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">4. Information Sharing and Disclosure</h2>
-          <p class="text-gray-700 mb-4">
-            We may share your information with:
-          </p>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Regulatory authorities as required by law</li>
-            <li>Service providers who assist in our operations</li>
-            <li>Professional advisors and consultants</li>
-            <li>With your explicit consent for specific purposes</li>
-          </ul>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">5. Data Security</h2>
-          <p class="text-gray-700 mb-4">
-            We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
-          </p>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">6. Your Rights</h2>
-          <p class="text-gray-700 mb-4">
-            Under applicable Indian laws, you have the right to:
-          </p>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Access your personal information</li>
-            <li>Correct inaccurate information</li>
-            <li>Request deletion of your information</li>
-            <li>Object to processing of your information</li>
-            <li>Withdraw consent at any time</li>
-          </ul>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold accent mb-4">7. Contact Us</h2>
-          <p class="text-gray-700 mb-4">
-            If you have any questions about this Privacy Policy or our data practices, please contact us at:
-          </p>
-          <div class="bg-gray-50 p-4 rounded-lg">
-            <p class="text-gray-700">CA Rohan Vijay Solanki & Associates</p>
-            <p class="text-gray-700">266/SH-B/40, First Floor, Pratap Nagar</p>
-            <p class="text-gray-700">Sec-26, Rana Sanga Road, Jaipur-302033</p>
-            <p class="text-gray-700">Email: carohansolanki@gmail.com</p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-primary rounded-xl p-6">
+              <h3 class="text-xl font-semibold accent mb-4 flex items-center">
+                <i class="fas fa-user text-highlight mr-2"></i>
+                Personal Information
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Name and contact information</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Business details and financial information</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Tax-related documents and information</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Communication preferences</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-primary rounded-xl p-6">
+              <h3 class="text-xl font-semibold accent mb-4 flex items-center">
+                <i class="fas fa-briefcase text-highlight mr-2"></i>
+                Professional Information
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Educational background</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Professional qualifications</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Career counseling preferences</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                  <span>Service requirements</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </div>
+
+        <!-- Information Usage -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent p-3 rounded-full mr-4">
+              <i class="fas fa-cogs text-white"></i>
+            </div>
+            <h2 class="text-2xl font-semibold accent">3. How We Use Your Information</h2>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-primary rounded-xl p-6">
+              <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-handshake text-accent"></i>
+              </div>
+              <h3 class="font-semibold text-accent mb-2">Professional Services</h3>
+              <p class="text-gray-700">Provide tailored services based on your requirements</p>
+            </div>
+            <div class="bg-primary rounded-xl p-6">
+              <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-comments text-accent"></i>
+              </div>
+              <h3 class="font-semibold text-accent mb-2">Communication</h3>
+              <p class="text-gray-700">Keep you informed about services and updates</p>
+            </div>
+            <div class="bg-primary rounded-xl p-6">
+              <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-chart-line text-accent"></i>
+              </div>
+              <h3 class="font-semibold text-accent mb-2">Service Improvement</h3>
+              <p class="text-gray-700">Enhance our services and website experience</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Security -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent p-3 rounded-full mr-4">
+              <i class="fas fa-lock text-white"></i>
+            </div>
+            <h2 class="text-2xl font-semibold accent">4. Data Security</h2>
+          </div>
+          <div class="bg-primary rounded-xl p-6">
+            <p class="text-gray-700 mb-6">
+              We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="flex items-center">
+                <i class="fas fa-shield-alt text-highlight mr-2"></i>
+                <span class="text-gray-700">Secure Storage</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-user-shield text-highlight mr-2"></i>
+                <span class="text-gray-700">Access Control</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-lock text-highlight mr-2"></i>
+                <span class="text-gray-700">Data Encryption</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <h2 class="text-2xl font-semibold accent">5. Contact Us</h2>
+          </div>
+          <div class="bg-primary rounded-xl p-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-semibold text-accent mb-4">Our Location</h3>
+                <p class="text-gray-700 mb-2">266/SH-B/40, First Floor, Pratap Nagar</p>
+                <p class="text-gray-700 mb-2">Sec-26, Rana Sanga Road</p>
+                <p class="text-gray-700">Jaipur-302033</p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-accent mb-4">Get in Touch</h3>
+                <a href="mailto:carohansolanki@gmail.com" class="text-accent hover:text-highlight transition flex items-center mb-2">
+                  <i class="fas fa-envelope mr-2"></i>
+                  carohansolanki@gmail.com
+                </a>
+                <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES" target="_blank" class="text-accent hover:text-highlight transition flex items-center">
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  View on Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-accent text-white py-8 mt-12">
+  <footer class="bg-accent text-white py-12">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-white/60 text-sm">&copy; 2024 CA Rohan Solanki. All rights reserved.</p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="index.html" class="text-white/60 hover:text-white text-sm transition">Home</a>
-          <a href="terms.html" class="text-white/60 hover:text-white text-sm transition">Terms & Conditions</a>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Brand Section -->
+        <div class="space-y-4">
+          <div class="flex items-center">
+            <img src="./favicon.svg" alt="CA Logo" class="h-12 w-12">
+            <span class="text-xl font-bold ml-3">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+          </div>
+          <p class="text-white/60">Your trusted partner in financial excellence and professional growth.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6 flex items-center">
+            <i class="fas fa-link mr-2 text-highlight"></i>
+            Quick Links
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="index.html" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="terms.html" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Terms & Conditions
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6 flex items-center">
+            <i class="fas fa-address-card mr-2 text-highlight"></i>
+            Contact Info
+          </h4>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-highlight mt-1 mr-3"></i>
+              <span class="text-white/80">266/SH-B/40, First Floor, Pratap Nagar, Sec-26, Rana Sanga Road, Jaipur-302033</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-highlight mr-3"></i>
+              <a href="mailto:carohansolanki@gmail.com" class="text-white/80 hover:text-white transition">carohansolanki@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 pt-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-white/60 text-sm">&copy; 2024 CA Rohan Solanki. All rights reserved.</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="index.html" class="text-white/60 hover:text-white text-sm transition">Home</a>
+            <a href="terms.html" class="text-white/60 hover:text-white text-sm transition">Terms & Conditions</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Initialize AOS animation
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true
+      });
+    });
+  </script>
 </body>
 </html> 
