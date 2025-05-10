@@ -3,33 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms & Conditions - CA ROHAN VIJAY SOLANKI & ASSOCIATES</title>
+  <title>CA ROHAN VIJAY SOLANKI & ASSOCIATES | Chartered Accountant & Career Counsellor</title>
+  <meta name="description" content="CA ROHAN VIJAY SOLANKI & ASSOCIATES provides expert financial services including tax planning, audit, GST compliance and career counselling for CA/CS/CMA aspirants in Jaipur.">
+  <meta name="keywords" content="Chartered Accountant, CA in Jaipur, Tax Consultant, GST Consultant, Career Counselling, CA Career Guidance, CA Rohan Solanki">
   
-  <!-- Preload critical assets -->
-  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-  <link rel="preload" href="./favicon.svg" as="image">
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="CA ROHAN VIJAY SOLANKI & ASSOCIATES | Chartered Accountant & Career Counsellor">
+  <meta property="og:description" content="Expert financial services and career counselling for CA/CS/CMA aspirants in Jaipur.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.carohansolanki.com">
+  <meta property="og:image" content="https://www.carohansolanki.com/socialtag.png">
   
-  <!-- Load stylesheets -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CA Rohan Solanki | Chartered Accountant & Career Counsellor">
+  <meta name="twitter:description" content="Expert financial services and career counselling for CA/CS/CMA aspirants in Jaipur.">
+  <meta name="twitter:image" content="https://www.carohansolanki.com/socialtag.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Favicon for Devices -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CA ROHAN VIJAY SOLANKI & ASSOCIATES" />
+  <link rel="manifest" href="/site.webmanifest" />
   
-  <!-- Inline critical CSS -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="alternate icon" href="./favicon.ico">
+  <link rel="mask-icon" href="./favicon.svg" color="#203731">
+  <meta name="theme-color" content="#203731">
+  
+   <!-- CSS -->
   <style>
-    html, body {width: auto!important; overflow-x: hidden!important} 
+    /* Base mobile-first styles */
+    html, body {
+      width: auto!important; 
+      overflow-x: hidden!important;
+      font-size: 14px; /* Base font size for mobile */
+    } 
+    
     body { 
       font-family: 'Lora', serif;
       scroll-behavior: smooth;
+      line-height: 1.5;
     }
+
     h1, h2, h3, h4 { 
       font-family: 'Playfair Display', serif;
       font-weight: 700;
+      line-height: 1.2;
     }
+
+    /* Mobile-first typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    /* Mobile-first spacing */
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .section-padding {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    /* Mobile-first grid */
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    /* Mobile-first card styles */
+    .card {
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    /* Mobile-first navigation */
+    .nav-link {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* Mobile-first buttons */
+    .btn {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    /* Mobile-first images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mobile-first spacing utilities */
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+
+    .space-x-4 > * + * {
+      margin-left: 1rem;
+    }
+
+    /* Tablet breakpoint */
+    @media (min-width: 768px) {
+      html, body {
+        font-size: 16px;
+      }
+
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.75rem; }
+      h4 { font-size: 1.5rem; }
+
+      .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .section-padding {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      .btn {
+        width: auto;
+      }
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width: 1024px) {
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2.5rem; }
+      h3 { font-size: 2rem; }
+      h4 { font-size: 1.75rem; }
+
+      .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .section-padding {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+
+    /* Existing styles */
     .accent { color: #203731; }
     .bg-primary { background-color: #f9f7f5; }
     .highlight { color: #bfa26b; }
@@ -40,6 +177,8 @@
     .bg-highlight { background-color: #bfa26b; }
     .border-highlight { border-color: #bfa26b; }
     .text-highlight { color: #bfa26b; }
+    
+    /* Mobile-first animations */
     .nav-link {
       position: relative;
     }
@@ -56,229 +195,191 @@
     .nav-link:hover::after {
       width: 100%;
     }
-  </style>
-  
-  <!-- Defer non-critical JavaScript -->
-  <script src="https://cdn.tailwindcss.com" defer></script>
-  <script>
-    tailwind.config = {
-      content: ['./**/*.{html,js}'],
-      theme: {
-        extend: {
-          colors: {
-            primary: '#f9f7f5',
-            accent: '#203731',
-            highlight: '#bfa26b'
-          }
-        }
-      },
-      purge: {
-        enabled: true,
-        content: ['./**/*.{html,js}']
+
+    /* Mobile-first card hover effects */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    @media (hover: hover) {
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       }
     }
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  </style>
 </head>
-<body class="bg-primary">
+<body class="bg-primary text-gray-800 antialiased">
+  <!-- Disclaimer Modal -->
+  <div id="disclaimerModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <div class="bg-white p-6 sm:p-8 max-w-lg rounded-xl shadow-lg w-full" data-aos="zoom-in">
+      <div class="flex items-center mb-4">
+        <div class="bg-accent p-3 rounded-full mr-3">
+          <i class="fas fa-shield-alt text-white"></i>
+        </div>
+        <h2 class="text-xl font-bold accent">Disclaimer</h2>
+      </div>
+      <div class="max-h-[60vh] overflow-y-auto pr-2">
+        <p class="text-sm mb-4">
+          The Institute of Chartered Accountants of India does not permit advertisement or solicitation by Chartered Accountants in any form or manner. By accessing this website, you acknowledge and confirm that you are seeking information relating to CA Rohan Solanki on your own accord and that there has been no form of solicitation, advertisement or inducement.
+        </p>
+        <p class="text-sm mb-4">
+          The contents of this website are for informational purposes only and should not be interpreted as soliciting or advertising. No information provided on this website should be used or construed as substitute of professional advice. CA Rohan Solanki shall not be liable for consequences of any action taken by relying on the information provided on this website. It is recommended that the readers should take professional advice before acting on the same.
+        </p>
+        <p class="text-sm mb-4">
+          The contents of this website are the intellectual property of CA Rohan Solanki.
+        </p>
+      </div>
+      <div class="flex items-center mt-4">
+        <input type="checkbox" id="agreeCheckbox" class="mr-2 h-4 w-4 accent-accent">
+        <label for="agreeCheckbox" class="text-sm">I have read and understood above and I agree with the terms of usage of this website.</label>
+      </div>
+      <button onclick="closeDisclaimer()" id="proceedBtn" class="mt-4 w-full px-6 py-3 bg-accent text-white rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+        Proceed <i class="fas fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+  </div>
+
   <!-- Navbar -->
   <nav class="fixed top-0 inset-x-0 bg-white shadow-sm z-40 transition-all duration-300">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-3">
+    <div class="max-w-screen-xl mx-auto px-4 py-3">
       <div class="flex items-center justify-between">
-        <a href="index.html" class="text-xl sm:text-2xl font-bold accent flex items-center">
-          <img src="./favicon.svg" alt="CA Logo" class="h-10 w-10 sm:h-12 sm:w-12 mr-3">
+        <a href="#" class="text-lg sm:text-xl font-bold accent flex items-center">
+          <img src="./favicon.svg" alt="CA Logo" class="h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3">
           <span class="hidden sm:inline">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
           <span class="sm:hidden">CA ROHAN SOLANKI</span>
         </a>
-        <div class="flex items-center space-x-6">
-          <a href="index.html" class="nav-link hover:text-accent">Home</a>
-          <a href="privacy-policy.html" class="nav-link hover:text-accent">Privacy Policy</a>
-        </div>
-      </div>
+        <button id="menuBtn" class="md:hidden focus:outline-none p-2" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+      </button>
+        <ul id="navMenu" class="hidden md:flex space-x-4 lg:space-x-6 text-gray-700">
+        <li><a href="#services" class="nav-link hover:text-accent">Services</a></li>
+        <li><a href="#career-counselling" class="nav-link hover:text-accent">Counselling</a></li>
+        <li><a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link hover:text-accent">Contact</a></li>
+          <li><a href="#contact" class="px-3 py-2 btn-primary rounded-lg consult-btn">Book Consultation</a></li>
+      </ul>
+    </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 bg-white shadow-lg">
+      <ul class="space-y-3">
+        <li><a href="#services" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#career-counselling" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Counselling</a></li>
+        <li><a href="#testimonials" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Testimonials</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="#contact" class="block w-full text-center px-4 py-2 btn-primary rounded-lg mt-2" onclick="closeMobileMenu()">Book Consultation</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="pt-24 pb-12">
-    <div class="container mx-auto px-4 py-8">
-      <div class="max-w-4xl mx-auto">
-        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up">
-          <div class="text-center mb-12">
-            <img src="./favicon.svg" alt="CA ROHAN VIJAY SOLANKI & ASSOCIATES Logo" class="w-24 h-24 mx-auto mb-6" loading="lazy" width="96" height="96">
-            <h1 class="text-4xl font-bold text-accent mb-4">Terms & Conditions</h1>
-            <p class="text-gray-600">Last updated: March 2024</p>
+  <main class="pt-16 sm:pt-20">
+    <!-- Header / Hero -->
+    <header class="relative overflow-hidden bg-white">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 -skew-x-12 transform origin-top-right"></div>
+        <div class="absolute bottom-0 left-0 w-1/3 h-2/3 bg-highlight/5 skew-x-12 transform origin-bottom-left"></div>
+        <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-accent/5 rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-highlight/5 rounded-full filter blur-3xl"></div>
+      </div>
+
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 relative">
+        <div class="grid lg:grid-cols-2 gap-8 items-center min-h-[60vh] sm:min-h-[80vh]">
+          <!-- Left Content -->
+          <div class="relative z-10 py-8 sm:py-12" data-aos="fade-right">
+            <!-- Trust Badge -->
+            <div class="inline-flex items-center gap-2 bg-accent/10 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6">
+              <i class="fas fa-shield-alt text-accent"></i>
+              <span class="text-accent font-medium text-sm sm:text-base">Trusted by 1000+ Businesses</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold accent mb-4 sm:mb-6 leading-tight">
+              Your Path to <span class="text-highlight">Financial Success</span> & Career Growth
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 max-w-2xl">
+              Expert financial solutions and career guidance from a qualified Chartered Accountant with 10+ years of experience
+            </p>
+
+            <!-- Credentials -->
+            <div class="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
+              <div class="flex items-center gap-2 bg-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-sm">
+                <i class="fas fa-graduation-cap text-accent"></i>
+                <span class="text-sm sm:text-base text-gray-700">B.Com, M.Com</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-sm">
+                <i class="fas fa-balance-scale text-accent"></i>
+                <span class="text-sm sm:text-base text-gray-700">LLB</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-sm">
+                <i class="fas fa-certificate text-accent"></i>
+                <span class="text-sm sm:text-base text-gray-700">ACA</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-sm">
+                <i class="fas fa-file-invoice text-accent"></i>
+                <span class="text-sm sm:text-base text-gray-700">Taxation Law</span>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <a href="#contact" class="group px-6 py-3 sm:px-8 sm:py-4 bg-accent text-white rounded-lg text-center font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                Get Expert Consultation
+                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#career-counselling" class="group px-6 py-3 sm:px-8 sm:py-4 bg-highlight text-white rounded-lg text-center font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                Start Your Career Journey
+                <i class="fas fa-graduation-cap ml-2 group-hover:rotate-12 transition-transform"></i>
+              </a>
+            </div>
           </div>
+          
+          <!-- Right Content - Image -->
+          <div class="relative h-[40vh] sm:h-[50vh] lg:h-[80vh]" data-aos="fade-left">
+            <div class="relative h-full rounded-2xl overflow-hidden shadow-2xl">
+              <!-- Main Image -->
+              <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                   alt="Indian Tax Documents and Calculator" 
+                   class="w-full h-full object-cover">
+              
+              <!-- Overlay Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-br from-accent/30 via-accent/10 to-highlight/30"></div>
 
-          <!-- Content Cards -->
-          <div class="grid gap-8">
-            <!-- Introduction -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-file-contract text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">1. Introduction</h2>
-              </div>
-              <p class="text-gray-700">
-                These Terms and Conditions govern your use of the services provided by CA Rohan Vijay Solanki & Associates. By accessing our website or using our services, you agree to be bound by these terms.
-              </p>
-            </div>
-
-            <!-- Professional Services -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-briefcase text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">2. Professional Services</h2>
-              </div>
-              <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-primary rounded-xl p-6">
-                  <h3 class="text-xl font-semibold accent mb-4 flex items-center">
-                    <i class="fas fa-list-check text-highlight mr-2"></i>
-                    Scope of Services
-                  </h3>
-                  <ul class="space-y-2 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Tax planning and compliance services</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Audit and assurance services</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>GST registration and compliance</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Financial advisory services</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Career counseling for CA/CS/CMA aspirants</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="bg-primary rounded-xl p-6">
-                  <h3 class="text-xl font-semibold accent mb-4 flex items-center">
-                    <i class="fas fa-gavel text-highlight mr-2"></i>
-                    Professional Standards
-                  </h3>
-                  <ul class="space-y-2 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Institute of Chartered Accountants of India (ICAI) guidelines</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Applicable Indian laws and regulations</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-highlight mt-1 mr-2"></i>
-                      <span>Professional ethics and standards</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Client Responsibilities -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-users text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">3. Client Responsibilities</h2>
-              </div>
-              <div class="bg-primary rounded-xl p-6">
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div class="flex items-center">
-                    <i class="fas fa-file-circle-check text-highlight mr-2"></i>
-                    <span class="text-gray-700">Provide accurate information</span>
-                  </div>
-                  <div class="flex items-center">
-                    <i class="fas fa-key text-highlight mr-2"></i>
-                    <span class="text-gray-700">Maintain confidentiality</span>
-                  </div>
-                  <div class="flex items-center">
-                    <i class="fas fa-clock text-highlight mr-2"></i>
-                    <span class="text-gray-700">Timely document submission</span>
-                  </div>
-                  <div class="flex items-center">
-                    <i class="fas fa-money-bill text-highlight mr-2"></i>
-                    <span class="text-gray-700">Payment of fees</span>
-                  </div>
-                  <div class="flex items-center">
-                    <i class="fas fa-scale-balanced text-highlight mr-2"></i>
-                    <span class="text-gray-700">Legal compliance</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Fees and Payments -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-money-bill-wave text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">4. Fees and Payments</h2>
-              </div>
-              <div class="bg-primary rounded-xl p-6">
-                <div class="grid md:grid-cols-3 gap-6">
-                  <div class="bg-white rounded-lg p-4">
-                    <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                      <i class="fas fa-chart-line text-accent"></i>
+              <!-- Stats Overlay Bar -->
+              <div class="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 sm:p-4 md:p-6" data-aos="fade-up">
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+                  <!-- Experience -->
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-clock text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
-                    <h3 class="font-semibold text-accent mb-2">Service Scope</h3>
-                    <p class="text-gray-700">Based on complexity and requirements</p>
-                  </div>
-                  <div class="bg-white rounded-lg p-4">
-                    <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                      <i class="fas fa-clock text-accent"></i>
+                    <div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Years Experience</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">10+</div>
                     </div>
-                    <h3 class="font-semibold text-accent mb-2">Time Investment</h3>
-                    <p class="text-gray-700">Based on required resources</p>
                   </div>
-                  <div class="bg-white rounded-lg p-4">
-                    <div class="bg-accent/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                      <i class="fas fa-chart-bar text-accent"></i>
-                    </div>
-                    <h3 class="font-semibold text-accent mb-2">Market Standards</h3>
-                    <p class="text-gray-700">Aligned with industry rates</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- Contact Section -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="400">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-envelope text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">5. Contact Us</h2>
-              </div>
-              <div class="bg-primary rounded-xl p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 class="font-semibold text-accent mb-4">Our Location</h3>
-                    <p class="text-gray-700 mb-2">266/SH-B/40, First Floor, Pratap Nagar</p>
-                    <p class="text-gray-700 mb-2">Sec-26, Rana Sanga Road</p>
-                    <p class="text-gray-700">Jaipur-302033</p>
+                  <!-- Happy Clients -->
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-users text-white text-base sm:text-lg md:text-xl"></i>
+                    </div>
+                    <div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Happy Clients</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">1000+</div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 class="font-semibold text-accent mb-4">Get in Touch</h3>
-                    <a href="mailto:carohansolanki@gmail.com" class="text-accent hover:text-highlight transition flex items-center mb-2">
-                      <i class="fas fa-envelope mr-2"></i>
-                      carohansolanki@gmail.com
-                    </a>
-                    <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES" target="_blank" class="text-accent hover:text-highlight transition flex items-center">
-                      <i class="fas fa-map-marker-alt mr-2"></i>
-                      View on Google Maps
-                    </a>
+
+                  <!-- Rating -->
+                  <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
+                    <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
+                      <i class="fas fa-star text-white text-base sm:text-lg md:text-xl"></i>
+                    </div>
+                    <div>
+                      <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Google Rating</div>
+                      <div class="text-sm sm:text-base md:text-xl font-bold text-white">4.8/5</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -286,7 +387,707 @@
           </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services" class="py-12 sm:py-16 px-4 sm:px-6 bg-white">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold accent mb-4">Our Services</h2>
+          <p class="max-w-2xl mx-auto text-gray-600">Comprehensive financial and advisory services tailored to your unique needs</p>
+        </div>
+        <div class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Service Cards -->
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-file-invoice-dollar text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">Tax Planning & Compliance</h3>
+            <p class="text-gray-600 mb-4">Strategic advisory, filing & optimization for personal and corporate taxes under Indian regulations.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Income tax planning and filing for individuals and businesses</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Tax optimization strategies and compliance management</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Representation before tax authorities and handling assessments</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+          
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="150">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-search-dollar text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">Audit & Assurance</h3>
+            <p class="text-gray-600 mb-4">Statutory and internal audits ensuring complete accuracy and regulatory adherence for your business.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Statutory audit of financial statements and compliance</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Internal audit and risk assessment services</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Due diligence and forensic audit investigations</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+          
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-receipt text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">GST Registration & Returns</h3>
+            <p class="text-gray-600 mb-4">Seamless GST onboarding, compliance management and timely filings to keep your business compliant.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>GST registration and compliance management</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Monthly/quarterly GST return filing and reconciliation</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>GST audit and representation before authorities</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+          
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="250">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-chart-line text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">Financial Advisory</h3>
+            <p class="text-gray-600 mb-4">Budgeting, forecasting & modeling to support strategic growth initiatives and financial health.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Business planning and financial forecasting</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Investment advisory and portfolio management</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Merger and acquisition advisory services</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+          
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-clipboard-check text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">Compliance Audits</h3>
+            <p class="text-gray-600 mb-4">Due diligence, risk assessment & compliance reviews tailored to your business requirements.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Regulatory compliance audits and reviews</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Internal control assessment and improvement</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Risk management and fraud prevention</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+          
+          <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="350">
+            <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              <i class="fas fa-building text-white text-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold accent mb-3">Business Setup Advisory</h3>
+            <p class="text-gray-600 mb-4">Guiding startups through incorporation, registrations & regulatory clearances for smooth operations.</p>
+            <ul class="text-gray-600 space-y-2 mb-4">
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Company incorporation and business registration</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Business structure and tax planning setup</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-highlight mt-1 mr-2"></i>
+                <span>Regulatory compliance and licensing support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Counselling -->
+    <section id="career-counselling" class="py-16 px-4 sm:px-6 bg-primary">
+      <div class="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: Visual/Graphic -->
+        <div class="relative" data-aos="fade-right">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1719159381916-062fa9f435a6?w=600&auto=format&fit=crop&q=60" alt="Career Guidance" class="w-full h-80 object-cover">
+            <div class="absolute bottom-4 left-4 flex items-center space-x-3 z-10">
+              <div class="relative bg-[#203731] rounded-full shadow-lg w-16 h-16 flex items-center justify-center">
+                <div class="relative flex flex-col items-center justify-center">
+                  <span class="font-extrabold text-2xl text-white leading-none">90%</span>
+                  <span class="text-[11px] text-white font-semibold leading-none">Success</span>
+                </div>
+              </div>
+              <div class="bg-white bg-opacity-95 rounded-lg px-3 py-2 shadow-lg border border-highlight">
+                <span class="text-xs text-accent font-semibold">success rate of our guided students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Content -->
+        <div data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold accent mb-4">Career Counselling for Commerce Aspirants</h2>
+          <p class="text-lg text-gray-700 mb-6">Personalized guidance for CA, CS, CMA, and commerce students to help you achieve your professional dreams.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+            <div class="flex items-start">
+              <div class="bg-highlight text-white rounded-full p-3 mr-4">
+                <i class="fas fa-map-signs"></i>
+                </div>
+                <div>
+                <h4 class="font-semibold text-accent">Roadmap Planning</h4>
+                <p class="text-gray-600 text-sm">Step-by-step plan from school to professional exams.</p>
+                </div>
+                </div>
+            <div class="flex items-start">
+              <div class="bg-highlight text-white rounded-full p-3 mr-4">
+                <i class="fas fa-lightbulb"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-accent">Exam Strategies</h4>
+                <p class="text-gray-600 text-sm">Proven tips for exam success and time management.</p>
+                </div>
+                </div>
+            <div class="flex items-start">
+              <div class="bg-highlight text-white rounded-full p-3 mr-4">
+                <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-accent">Skill Workshops</h4>
+                <p class="text-gray-600 text-sm">Workshops for communication, leadership, and more.</p>
+                </div>
+                </div>
+            <div class="flex items-start">
+              <div class="bg-highlight text-white rounded-full p-3 mr-4">
+                <i class="fas fa-briefcase"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-accent">Professional Path</h4>
+                <p class="text-gray-600 text-sm">Internships, certifications, and career mentoring.</p>
+                </div>
+            </div>
+          </div>
+          <blockquote class="border-l-4 border-highlight pl-4 italic text-gray-700 mb-6">
+            "The guidance I received helped me clear my CA exams with confidence!"<br>
+            <span class="text-sm text-gray-500">— Riya Sharma, CA Student</span>
+          </blockquote>
+          <a href="#contact" class="inline-block px-8 py-3 btn-secondary rounded-lg font-semibold">
+            Book Your Counselling Session
+            </a>
+          </div>
+                </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 sm:py-20 px-4 sm:px-6 bg-primary relative overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-0 left-0 w-1/3 h-1/3 bg-accent rounded-full filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-1/3 h-1/3 bg-highlight rounded-full filter blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
+              </div>
+
+      <div class="max-w-screen-xl mx-auto relative">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-highlight font-semibold tracking-wider uppercase text-sm mb-2 block">Why Choose Us</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold accent mb-4">Excellence in Every Service</h2>
+          <p class="max-w-2xl mx-auto text-gray-600 text-lg">Discover why clients trust us for their financial and career success</p>
+            </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Trusted Expertise -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative w-20 h-20 mx-auto mb-6">
+              <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fas fa-award text-2xl text-white"></i>
+          </div>
+        </div>
+            <h3 class="text-xl font-bold accent mb-4">Trusted Expertise</h3>
+            <p class="text-gray-600 mb-4">Led by a qualified CA with 10+ years of experience in finance and education.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Certified Professionals</span>
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Best Practices</span>
+              </li>
+            </ul>
+      </div>
+
+          <!-- Professional Integrity -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative w-20 h-20 mx-auto mb-6">
+              <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fas fa-hand-holding-heart text-2xl text-white"></i>
+        </div>
+            </div>
+            <h3 class="text-xl font-bold accent mb-4">Professional Integrity</h3>
+            <p class="text-gray-600 mb-4">Highest standards of ethics and confidentiality in all our engagements.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Ethical Practices</span>
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Complete Privacy</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Personalized Approach -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative w-20 h-20 mx-auto mb-6">
+              <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fas fa-user-tie text-2xl text-white"></i>
+            </div>
+          </div>
+            <h3 class="text-xl font-bold accent mb-4">Personalized Approach</h3>
+            <p class="text-gray-600 mb-4">Customized solutions tailored to your unique needs and goals.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Custom Solutions</span>
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Dedicated Support</span>
+              </li>
+            </ul>
+            </div>
+
+          <!-- Holistic Guidance -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative w-20 h-20 mx-auto mb-6">
+              <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fas fa-globe-asia text-2xl text-white"></i>
+          </div>
+            </div>
+            <h3 class="text-xl font-bold accent mb-4">Holistic Guidance</h3>
+            <p class="text-gray-600 mb-4">Comprehensive support from tax planning to career development.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>End-to-End Solutions</span>
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-highlight mr-2"></i>
+                <span>Strategic Planning</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="text-center mt-16" data-aos="fade-up">
+          <a href="#contact" class="inline-flex items-center px-8 py-4 bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+            Get Started Today
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 sm:py-20 px-4 sm:px-6 bg-primary relative overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-accent rounded-full filter blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-highlight rounded-full filter blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+      </div>
+
+      <div class="max-w-screen-xl mx-auto relative">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-highlight font-semibold tracking-wider uppercase text-sm mb-2 block">Success Stories</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold accent mb-4">What Our Clients Say</h2>
+          <p class="max-w-2xl mx-auto text-gray-600 text-lg">Real experiences from businesses and students who achieved their goals with us</p>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16" data-aos="fade-up">
+          <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+            <div class="text-3xl font-bold text-accent mb-2">1000+</div>
+            <div class="text-gray-600">Happy Clients</div>
+              </div>
+          <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+            <div class="text-3xl font-bold text-accent mb-2">4.8</div>
+            <div class="text-gray-600">Average Rating</div>
+            </div>
+          <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+            <div class="text-3xl font-bold text-accent mb-2">90%</div>
+            <div class="text-gray-600">Success Rate</div>
+          </div>
+          <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+            <div class="text-3xl font-bold text-accent mb-2">10+</div>
+            <div class="text-gray-600">Years Experience</div>
+          </div>
+        </div>
+
+        <!-- Featured Testimonials -->
+        <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
+          <!-- Business Owner Testimonial -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-start mb-6">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1647483684830-7ddde27dcf4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Mr. Anil Mehta" 
+                     class="w-16 h-16 rounded-full object-cover border-4 border-accent/10">
+                <div class="absolute -bottom-2 -right-2 bg-highlight text-white p-2 rounded-full">
+                  <i class="fas fa-building text-sm"></i>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="font-bold text-accent text-lg">Mr. Anil Mehta</h4>
+                <p class="text-gray-500">Business Owner</p>
+                <div class="flex mt-1">
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+            </div>
+          </div>
+              </div>
+            <blockquote class="text-gray-700 text-lg italic mb-6">
+              "CA Rohan's strategic tax planning saved our firm substantial amounts while ensuring full compliance. His attention to detail and proactive approach makes him a true professional in every sense."
+            </blockquote>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-check-circle text-highlight mr-2"></i>
+              <span>Verified Client • 2 years with us</span>
+            </div>
+          </div>
+
+          <!-- Student Testimonial -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-start mb-6">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1623631140622-cca64af89fff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Riya Sharma" 
+                     class="w-16 h-16 rounded-full object-cover border-4 border-accent/10">
+                <div class="absolute -bottom-2 -right-2 bg-highlight text-white p-2 rounded-full">
+                  <i class="fas fa-graduation-cap text-sm"></i>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="font-bold text-accent text-lg">Riya Sharma</h4>
+                <p class="text-gray-500">CA Student</p>
+                <div class="flex mt-1">
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+            </div>
+          </div>
+              </div>
+            <blockquote class="text-gray-700 text-lg italic mb-6">
+              "The career guidance from CA Rohan was instrumental in my CA journey. His insights on exam preparation, article-ship selection and long-term career planning were invaluable. I couldn't have asked for a better mentor!"
+            </blockquote>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-check-circle text-highlight mr-2"></i>
+              <span>Verified Student • Cleared CA Foundation</span>
+            </div>
+          </div>
+
+          <!-- Parent Testimonial -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-start mb-6">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1735845929510-48e0ecdb53d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" 
+                     alt="Mrs. Priya Khanna" 
+                     class="w-16 h-16 rounded-full object-cover border-4 border-accent/10">
+                <div class="absolute -bottom-2 -right-2 bg-highlight text-white p-2 rounded-full">
+                  <i class="fas fa-users text-sm"></i>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="font-bold text-accent text-lg">Mrs. Priya Khanna</h4>
+                <p class="text-gray-500">Parent</p>
+                <div class="flex mt-1">
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star-half-alt text-highlight"></i>
+            </div>
+          </div>
+              </div>
+            <blockquote class="text-gray-700 text-lg italic mb-6">
+              "As a parent, I was confused about the best career path for my son. CA Rohan's counselling session provided clarity on various commerce options, their scope, and the preparation required. My son is now confidently pursuing CA."
+            </blockquote>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-check-circle text-highlight mr-2"></i>
+              <span>Verified Parent • Son pursuing CA</span>
+            </div>
+          </div>
+
+          <!-- Startup Founder Testimonial -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-start mb-6">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1699966661783-a90b818ee3ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Vikram Patel" 
+                     class="w-16 h-16 rounded-full object-cover border-4 border-accent/10">
+                <div class="absolute -bottom-2 -right-2 bg-highlight text-white p-2 rounded-full">
+                  <i class="fas fa-rocket text-sm"></i>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="font-bold text-accent text-lg">Mr. Vikram Patel</h4>
+                <p class="text-gray-500">Startup Founder</p>
+                <div class="flex mt-1">
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+              <i class="fas fa-star text-highlight"></i>
+            </div>
+          </div>
+            </div>
+            <blockquote class="text-gray-700 text-lg italic mb-6">
+              "From company registration to GST compliance and financial planning, CA Rohan has been our trusted advisor since day one. His practical advice has helped us navigate complex regulations while focusing on growth."
+            </blockquote>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-check-circle text-highlight mr-2"></i>
+              <span>Verified Client • Startup Advisory</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+          <div class="bg-white rounded-xl p-6 text-center">
+            <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shield-alt text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold text-accent mb-2">Trusted by 1000+ Businesses</h4>
+            <p class="text-gray-600">Join our growing list of satisfied clients</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 text-center">
+            <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-certificate text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold text-accent mb-2">Certified Professional</h4>
+            <p class="text-gray-600">Licensed CA with 10+ years of experience</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 text-center">
+            <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-handshake text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold text-accent mb-2">Satisfaction Guaranteed</h4>
+            <p class="text-gray-600">We're committed to your success</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-16" data-aos="fade-up">
+          <a href="#contact" class="inline-flex items-center px-8 py-4 bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+            Join Our Success Stories
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 sm:py-16 px-4 sm:px-6 bg-white">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold accent mb-4">Get in Touch</h2>
+          <p class="text-gray-700 max-w-2xl mx-auto">Ready to discuss your financial needs or career aspirations? Reach out to schedule a consultation.</p>
+        </div>
+            
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Contact Info Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up">
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-envelope icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">Email</h4>
+              <a href="mailto:carohansolanki@gmail.com" class="text-gray-700 hover:text-accent transition">carohansolanki@gmail.com</a>
+              </div>
+              
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-map-marker-alt icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">Address</h4>
+              <p class="text-gray-700 mb-3">266/SH-B/40, First Floor, Pratap Nagar, Sec-26, Rana Sanga Road, Jaipur-302033</p>
+              <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES/data=!4m2!3m1!1s0x0:0xb1ce3caeeda0f087?sa=X&ved=1t:2428&ictx=111" target="_blank" class="text-accent font-medium inline-flex items-center hover:text-highlight transition">
+                View on Google Maps <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+              </a>
+              </div>
+              
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-star icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">Google Reviews</h4>
+              <div class="flex items-center mb-2">
+                <div class="flex text-highlight">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="text-gray-700 ml-2">4.5</span>
+              </div>
+              <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES/data=!4m2!3m1!1s0x0:0xb1ce3caeeda0f087?sa=X&ved=1t:2428&ictx=111" target="_blank" class="text-accent font-medium inline-flex items-center hover:text-highlight transition">
+                Read Reviews <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+              </a>
+              </div>
+              
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <i class="fas fa-phone-alt icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">JustDial</h4>
+              <div class="flex items-center mb-2">
+                <div class="flex text-highlight">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-700 ml-2">5.0</span>
+              </div>
+              <a href="https://www.justdial.com/Jaipur/Ca-Rohan-Vijay-Solanki-Associates-Chartered-Accountants-Sec-29-Pratap-Nagar/0141PX141-X141-230109160024-F8V2_BZDET" target="_blank" class="text-accent font-medium inline-flex items-center hover:text-highlight transition">
+                View on JustDial <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+              </a>
+              </div>
+              
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <i class="fab fa-youtube icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">YouTube</h4>
+              <a href="https://www.youtube.com/@carohansolanki" target="_blank" class="text-gray-700 hover:text-accent transition">@carohansolanki</a>
+              </div>
+              
+            <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  <i class="fab fa-instagram icon-accent"></i>
+                </div>
+              <h4 class="font-semibold text-accent mb-2">Instagram</h4>
+              <a href="https://www.instagram.com/rohansolankiofficial" target="_blank" class="text-gray-700 hover:text-accent transition">@rohansolankiofficial</a>
+            </div>
+          </div>
+          
+          <!-- Contact CTA Card -->
+          <div class="bg-accent text-white p-6 sm:p-8 rounded-xl shadow-lg" data-aos="fade-up">
+            <div class="max-w-md mx-auto">
+              <h3 class="text-2xl font-semibold mb-4">Ready to take the next step?</h3>
+              <p class="mb-8 text-gray-100">Whether you need financial services or career guidance, we're here to help you succeed.</p>
+            
+            <div class="space-y-4">
+              <a href="https://calendly.com/rohanvijaysolanki" target="_blank" class="flex items-center justify-center px-6 py-3 bg-highlight text-white rounded-lg font-medium hover:bg-opacity-90 transition">
+                <i class="fas fa-calendar-check mr-2"></i> Schedule a Consultation
+              </a>
+              
+              <a href="mailto:carohansolanki@gmail.com" class="flex items-center justify-center px-6 py-3 bg-highlight text-white rounded-lg font-medium hover:bg-opacity-90 transition">
+                <i class="fas fa-envelope mr-2"></i> Email Us
+              </a>
+              
+                <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES/data=!4m2!3m1!1s0x0:0xb1ce3caeeda0f087?sa=X&ved=1t:2428&ictx=111" target="_blank" class="flex items-center justify-center px-6 py-3 bg-white text-accent rounded-lg font-medium hover:bg-gray-100 transition">
+                  <i class="fas fa-map-marker-alt mr-2"></i> Find Us on Google Maps
+                </a>
+
+                <a href="https://www.justdial.com/Jaipur/Ca-Rohan-Vijay-Solanki-Associates-Chartered-Accountants-Sec-29-Pratap-Nagar/0141PX141-X141-230109160024-F8V2_BZDET" target="_blank" class="flex items-center justify-center px-6 py-3 bg-white text-accent rounded-lg font-medium hover:bg-gray-100 transition">
+                  <i class="fas fa-phone-alt mr-2"></i> View on JustDial
+                </a>
+                
+                <a href="https://www.youtube.com/@carohansolanki" target="_blank" class="flex items-center justify-center px-6 py-3 bg-white text-accent rounded-lg font-medium hover:bg-gray-100 transition">
+                  <i class="fab fa-youtube mr-2"></i> Subscribe on YouTube
+                </a>
+                
+                <a href="https://www.instagram.com/rohansolankiofficial" target="_blank" class="flex items-center justify-center px-6 py-3 bg-highlight text-white rounded-lg font-medium hover:bg-opacity-90 transition">
+                  <i class="fab fa-instagram mr-2"></i> Follow on Instagram
+              </a>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-white border-opacity-20">
+              <div class="flex items-center justify-between mb-3">
+                <div>
+                  <h4 class="font-semibold">Business Hours</h4>
+                  <p class="text-sm text-gray-100/80">We're here to serve you</p>
+                </div>
+                <div id="statusIndicator" class="flex items-center">
+                  <div class="flex items-center px-4 py-1.5 rounded-full bg-green-400/10 border border-green-400/20 transform transition-all duration-300 hover:scale-105">
+                    <span class="relative flex h-3 w-3 mr-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span id="statusText" class="text-sm font-medium text-green-400 animate-pulse">Open Now</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p class="font-medium">Monday - Friday</p>
+                  <p class="text-gray-100">10:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                  <p class="font-medium">Saturday</p>
+                  <p class="text-gray-100">10:00 AM - 2:00 PM</p>
+                </div>
+                <div class="col-span-2">
+                  <p class="font-medium">Sunday</p>
+                  <p class="text-gray-100">Closed</p>
+                </div>
+              </div>
+              <div class="mt-4 text-sm text-gray-100/80">
+                <p class="flex items-center">
+                  <i class="fas fa-info-circle mr-2 text-highlight"></i>
+                  Status updates automatically based on current time
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -300,25 +1101,94 @@
             <span class="text-xl font-bold ml-3">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
           </div>
           <p class="text-white/60">Your trusted partner in financial excellence and professional growth.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.youtube.com/@carohansolanki" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/rohansolankiofficial" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:carohansolanki@gmail.com" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES/data=!4m2!3m1!1s0x0:0xb1ce3caeeda0f087?sa=X&ved=1t:2428&ictx=111" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.justdial.com/Jaipur/Ca-Rohan-Vijay-Solanki-Associates-Chartered-Accountants-Sec-29-Pratap-Nagar/0141PX141-X141-230109160024-F8V2_BZDET" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Quick Links -->
+        <!-- Services -->
         <div>
           <h4 class="text-lg font-semibold mb-6 flex items-center">
-            <i class="fas fa-link mr-2 text-highlight"></i>
-            Quick Links
+            <i class="fas fa-briefcase mr-2 text-highlight"></i>
+            Our Services
           </h4>
           <ul class="space-y-3">
             <li>
-              <a href="index.html" class="text-white/80 hover:text-white transition flex items-center">
+              <a href="#services" class="text-white/80 hover:text-white transition flex items-center">
                 <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
-                Home
+                Tax Planning & Compliance
               </a>
             </li>
             <li>
-              <a href="privacy-policy.html" class="text-white/80 hover:text-white transition flex items-center">
+              <a href="#services" class="text-white/80 hover:text-white transition flex items-center">
                 <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
-                Privacy Policy
+                Audit & Assurance
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                GST Services
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Financial Advisory
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Business Setup
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Career Counselling -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6 flex items-center">
+            <i class="fas fa-graduation-cap mr-2 text-highlight"></i>
+            Career Guidance
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                CA Path Guidance
+              </a>
+            </li>
+            <li>
+              <a href="#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Exam Strategies
+              </a>
+            </li>
+            <li>
+              <a href="#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Skill Development
+              </a>
+            </li>
+            <li>
+              <a href="#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                Professional Mentoring
               </a>
             </li>
           </ul>
@@ -339,24 +1209,39 @@
               <i class="fas fa-envelope text-highlight mr-3"></i>
               <a href="mailto:carohansolanki@gmail.com" class="text-white/80 hover:text-white transition">carohansolanki@gmail.com</a>
             </li>
+            <li class="flex items-center">
+              <i class="fas fa-clock text-highlight mr-3"></i>
+              <span class="text-white/80">Mon-Fri: 10:00 AM - 6:00 PM</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-calendar-alt text-highlight mr-3"></i>
+              <a href="https://calendly.com/rohanvijaysolanki" target="_blank" class="text-white/80 hover:text-white transition">Book a Consultation</a>
+            </li>
           </ul>
         </div>
       </div>
+    </div>
 
-      <!-- Bottom Bar -->
-      <div class="border-t border-white/10 pt-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-white/60 text-sm">&copy; 2024 CA Rohan Solanki. All rights reserved.</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="index.html" class="text-white/60 hover:text-white text-sm transition">Home</a>
+          <div class="flex space-x-6">
+            <a href="#disclaimerModal" onclick="document.getElementById('disclaimerModal').classList.remove('hidden')" class="text-white/60 hover:text-white text-sm transition">Disclaimer</a>
             <a href="privacy-policy.html" class="text-white/60 hover:text-white text-sm transition">Privacy Policy</a>
+            <a href="terms.html" class="text-white/60 hover:text-white text-sm transition">Terms of Service</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Move scripts to bottom of body -->
+<!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-accent text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <script>
     // Initialize AOS animation
     document.addEventListener('DOMContentLoaded', function() {
@@ -365,7 +1250,139 @@
         easing: 'ease-in-out',
         once: true
       });
+      
+      // Business Hours Status Check
+      function updateBusinessStatus() {
+        const now = new Date();
+        const day = now.getDay(); // 0 is Sunday, 1-6 are Monday-Saturday
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const currentTime = hour + (minute / 60);
+        
+        const statusIndicator = document.getElementById('statusIndicator');
+        const statusText = document.getElementById('statusText');
+        
+        let isOpen = false;
+        let nextOpenTime = '';
+        
+        if (day === 0) { // Sunday
+          isOpen = false;
+          nextOpenTime = 'Monday at 10:00 AM';
+        } else if (day === 6) { // Saturday
+          isOpen = currentTime >= 10 && currentTime < 14;
+          if (!isOpen) {
+            if (currentTime < 10) {
+              nextOpenTime = 'Today at 10:00 AM';
+            } else {
+              nextOpenTime = 'Monday at 10:00 AM';
+            }
+          }
+        } else { // Monday to Friday
+          isOpen = currentTime >= 10 && currentTime < 18;
+          if (!isOpen) {
+            if (currentTime < 10) {
+              nextOpenTime = 'Today at 10:00 AM';
+            } else if (day === 5) { // Friday after 6 PM
+              nextOpenTime = 'Saturday at 10:00 AM';
+            } else {
+              nextOpenTime = 'Tomorrow at 10:00 AM';
+            }
+          }
+        }
+        
+        if (isOpen) {
+          statusIndicator.innerHTML = `
+            <div class="flex items-center px-4 py-1.5 rounded-full bg-green-400/10 border border-green-400/20 transform transition-all duration-300 hover:scale-105 group">
+              <span class="relative flex h-3 w-3 mr-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </span>
+              <div class="flex flex-col">
+                <span class="text-sm font-medium text-green-400 animate-pulse">Open Now</span>
+                <span class="text-xs text-green-400/80">Closes at ${day === 6 ? '2:00 PM' : '6:00 PM'}</span>
+              </div>
+            </div>
+          `;
+        } else {
+          statusIndicator.innerHTML = `
+            <div class="flex items-center px-4 py-1.5 rounded-full bg-red-400/10 border border-red-400/20 transform transition-all duration-300 hover:scale-105 group">
+              <span class="relative flex h-3 w-3 mr-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+              </span>
+              <div class="flex flex-col">
+                <span class="text-sm font-medium text-red-400 animate-pulse">Closed</span>
+                <span class="text-xs text-red-400/80">Opens ${nextOpenTime}</span>
+              </div>
+            </div>
+          `;
+        }
+      }
+      
+      // Update status immediately and then every minute
+      updateBusinessStatus();
+      setInterval(updateBusinessStatus, 60000);
+      
+      // Modal logic
+      const checkbox = document.getElementById('agreeCheckbox');
+      const proceedBtn = document.getElementById('proceedBtn');
+      checkbox.addEventListener('change', () => proceedBtn.disabled = !checkbox.checked);
+      
+      // Mobile nav toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuBtn.innerHTML = mobileMenu.classList.contains('hidden') ? 
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>' :
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+      });
+      
+      // Navbar scroll effect
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+          nav.classList.add('shadow-md');
+          nav.classList.add('py-2');
+          nav.classList.remove('py-3');
+        } else {
+          nav.classList.remove('shadow-md');
+          nav.classList.remove('py-2');
+          nav.classList.add('py-3');
+        }
+      });
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+      }
     });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    });
+    
+    function closeDisclaimer() { 
+      document.getElementById('disclaimerModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+    
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('hidden');
+      document.getElementById('menuBtn').innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>';
+    }
   </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="e62dd44b-a35b-40d8-b211-dabfefc65db2"></script>
 </body>
-</html> 
+</html>
