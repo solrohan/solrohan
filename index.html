@@ -64,7 +64,7 @@
       pointer-events: none;
       user-select: none;
     }
-
+    
     h1, h2, h3, h4 { 
       font-family: 'Playfair Display', serif;
       font-weight: 700;
@@ -257,27 +257,27 @@
             <span class="hidden sm:inline">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
             <span class="sm:hidden">CA ROHAN SOLANKI</span>
           </a>
-          <button id="menuBtn" class="md:hidden focus:outline-none p-2" aria-label="Toggle menu">
+          <button id="menuBtn" class="lg:hidden focus:outline-none p-2" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
-          <ul id="navMenu" class="hidden md:flex space-x-4 lg:space-x-6 text-gray-700">
+          <ul id="navMenu" class="hidden lg:flex space-x-4 lg:space-x-6 text-gray-700">
           <li><a href="#services" class="nav-link hover:text-accent">Services</a></li>
           <li><a href="#career-counselling" class="nav-link hover:text-accent">Counselling</a></li>
           <li><a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a></li>
           <li><a href="#contact" class="nav-link hover:text-accent">Contact</a></li>
-            <li><a href="#contact" class="px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">Book Consultation</a></li>
+          <li><a href="#contact" class="hidden md:flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">Book Consultation</a></li>
         </ul>
       </div>
       </div>
-      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 bg-white shadow-lg">
-        <ul class="space-y-3">
-          <li><a href="#services" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Services</a></li>
-          <li><a href="#career-counselling" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Counselling</a></li>
-          <li><a href="#testimonials" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Testimonials</a></li>
-          <li><a href="#contact" class="block py-2 hover:text-accent" onclick="closeMobileMenu()">Contact</a></li>
-          <li><a href="#contact" class="block w-full text-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1" onclick="closeMobileMenu()">Book Consultation</a></li>
+      <div id="mobileMenu" class="hidden 2xl:hidden px-4 pb-4 bg-white shadow-lg border-t border-gray-100">
+        <ul class="space-y-3 py-2">
+          <li><a href="#services" class="block px-2 py-2.5 hover:text-accent hover:bg-accent/5 rounded-lg transition-all" onclick="closeMobileMenu()">Services</a></li>
+          <li><a href="#career-counselling" class="block px-2 py-2.5 hover:text-accent hover:bg-accent/5 rounded-lg transition-all" onclick="closeMobileMenu()">Counselling</a></li>
+          <li><a href="#testimonials" class="block px-2 py-2.5 hover:text-accent hover:bg-accent/5 rounded-lg transition-all" onclick="closeMobileMenu()">Testimonials</a></li>
+          <li><a href="#contact" class="block px-2 py-2.5 hover:text-accent hover:bg-accent/5 rounded-lg transition-all" onclick="closeMobileMenu()">Contact</a></li>
+          <li class="pt-2"><a href="#contact" class="block w-full text-center px-4 py-3 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1" onclick="closeMobileMenu()">Book Consultation</a></li>
         </ul>
       </div>
     </nav>
@@ -287,29 +287,30 @@
       <header class="relative overflow-hidden bg-white">
         <!-- Background Pattern -->
         <div class="absolute inset-0">
-          <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 -skew-x-12 transform origin-top-right"></div>
-          <div class="absolute bottom-0 left-0 w-1/3 h-2/3 bg-highlight/5 skew-x-12 transform origin-bottom-left"></div>
-          <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-accent/5 rounded-full filter blur-3xl"></div>
-          <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-highlight/5 rounded-full filter blur-3xl"></div>
+          <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/10 -skew-x-12 transform origin-top-right"></div>
+          <div class="absolute bottom-0 left-0 w-1/3 h-2/3 bg-highlight/10 skew-x-12 transform origin-bottom-left"></div>
+          <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-accent/10 rounded-full filter blur-3xl"></div>
+          <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-highlight/10 rounded-full filter blur-3xl"></div>
         </div>
 
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 relative">
-          <div class="grid lg:grid-cols-2 gap-8 items-center min-h-[60vh] sm:min-h-[80vh]">
-            <!-- Left Content -->
-            <div class="relative z-10 py-8 sm:py-12" data-aos="fade-right">
+          <div class="flex flex-col lg:flex-row gap-8 items-center min-h-fit lg:min-h-[80vh]">
+            <!-- Content Column -->
+            <div class="flex flex-col w-full lg:w-1/2 py-8 lg:py-0" data-aos="fade-right">
               <!-- Trust Badge -->
-              <div class="inline-flex items-center gap-2 bg-accent/10 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6">
-                <i class="fas fa-shield-alt text-accent"></i>
-                <span class="text-accent font-medium text-sm sm:text-base">Trusted by 1000+ Businesses</span>
-              </div>
+              <div class="order-1 relative z-10 py-6 lg:py-8">
+                <div class="inline-flex items-center gap-2 bg-accent/10 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6">
+                  <i class="fas fa-shield-alt text-accent"></i>
+                  <span class="text-accent font-medium text-sm sm:text-base">Trusted by 1000+ Businesses</span>
+                </div>
 
-              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold accent mb-4 sm:mb-6 leading-tight">
-                Your Path to <span class="text-highlight">Financial Success</span> & Career Growth
-              </h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold accent mb-4 sm:mb-6 leading-tight">
+                  Your Path to <span class="text-highlight">Financial Success</span> & Career Growth
+                </h1>
 
-              <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 max-w-2xl">
-                Expert financial solutions and career guidance from a qualified Chartered Accountant with 10+ years of experience
-              </p>
+                <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 max-w-2xl">
+                  Expert financial solutions and career guidance from a qualified Chartered Accountant with 10+ years of experience
+                </p>
 
               <!-- Credentials -->
               <div class="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
@@ -333,65 +334,23 @@
 
               <!-- CTA Buttons -->
               <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <a href="#contact" class="group px-6 py-3 sm:px-8 sm:py-4 bg-accent text-white rounded-lg text-center font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                <a href="#contact" class="btn group bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4">
                   Get Expert Consultation
                   <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <a href="#career-counselling" class="group px-6 py-3 sm:px-8 sm:py-4 bg-highlight text-white rounded-lg text-center font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                <a href="#career-counselling" class="btn group bg-highlight text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4">
                   Start Your Career Journey
                   <i class="fas fa-graduation-cap ml-2 group-hover:rotate-12 transition-transform"></i>
                 </a>
               </div>
             </div>
-            
-            <!-- Right Content - Image -->
-            <div class="relative h-[40vh] sm:h-[50vh] lg:h-[80vh]" data-aos="fade-left">
-              <div class="relative h-full rounded-2xl overflow-hidden shadow-2xl">
-                <!-- Main Image -->
-                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                     alt="Indian Tax Documents and Calculator" 
-                     class="w-full h-full object-cover">
-                
-                <!-- Overlay Gradient -->
-                <div class="absolute inset-0 bg-gradient-to-br from-accent/30 via-accent/10 to-highlight/30"></div>
-
-                <!-- Stats Overlay Bar -->
-                <div class="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 sm:p-4 md:p-6" data-aos="fade-up">
-                  <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
-                    <!-- Experience -->
-                    <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
-                      <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
-                        <i class="fas fa-clock text-white text-base sm:text-lg md:text-xl"></i>
-                      </div>
-                      <div>
-                        <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Years Experience</div>
-                        <div class="text-sm sm:text-base md:text-xl font-bold text-white">10+</div>
-                      </div>
-                    </div>
-
-                    <!-- Happy Clients -->
-                    <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
-                      <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
-                        <i class="fas fa-users text-white text-base sm:text-lg md:text-xl"></i>
-                      </div>
-                      <div>
-                        <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Happy Clients</div>
-                        <div class="text-sm sm:text-base md:text-xl font-bold text-white">1000+</div>
-                      </div>
-                    </div>
-
-                    <!-- Rating -->
-                    <div class="flex items-center gap-1 sm:gap-2 md:gap-3">
-                      <div class="bg-white/20 p-1.5 sm:p-2 md:p-3 rounded-lg">
-                        <i class="fas fa-star text-white text-base sm:text-lg md:text-xl"></i>
-                      </div>
-                      <div>
-                        <div class="text-[10px] sm:text-xs md:text-sm font-medium text-white/80">Google Rating</div>
-                        <div class="text-sm sm:text-base md:text-xl font-bold text-white">4.8/5</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="relative w-full lg:w-1/2 flex-shrink-0" data-aos="fade-left">
+              <div class="relative rounded-2xl overflow-hidden shadow-lg h-[40vh] sm:h-[50vh] lg:h-[80vh] w-full">
+                <img src="./heroimage.png" 
+                     alt="Professional signing documents" 
+                     class="w-full h-full object-cover object-right">
               </div>
             </div>
           </div>
@@ -405,14 +364,14 @@
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold accent mb-4">Our Services</h2>
             <p class="max-w-2xl mx-auto text-gray-600">Comprehensive financial and advisory services tailored to your unique needs</p>
           </div>
-          <div class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Service Cards -->
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="100">
-              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+          <div class="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Service Cards --> 
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 md:mb-4">
                 <i class="fas fa-file-invoice-dollar text-white text-lg"></i>
               </div>
-              <h3 class="text-xl font-semibold accent mb-3">Tax Planning & Compliance</h3>
-              <p class="text-gray-600 mb-4">Strategic advisory, filing & optimization for personal and corporate taxes under Indian regulations.</p>
+              <h3 class="text-xl md:text-lg lg:text-xl font-semibold accent mb-3">Tax Planning & Compliance</h3>
+              <p class="text-gray-600 mb-4 md:text-sm lg:text-base">Strategic advisory, filing & optimization for personal and corporate taxes under Indian regulations.</p>
               <ul class="text-gray-600 space-y-2 mb-4">
                 <li class="flex items-start">
                   <i class="fas fa-check text-highlight mt-1 mr-2"></i>
@@ -430,7 +389,7 @@
               <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
             </div>
             
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="150">
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="150">
               <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <i class="fas fa-search-dollar text-white text-lg"></i>
               </div>
@@ -453,13 +412,13 @@
               <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
             </div>
             
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="200">
-              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 md:mb-4">
                 <i class="fas fa-receipt text-white text-lg"></i>
               </div>
               <h3 class="text-xl font-semibold accent mb-3">GST Registration & Returns</h3>
-              <p class="text-gray-600 mb-4">Seamless GST onboarding, compliance management and timely filings to keep your business compliant.</p>
-              <ul class="text-gray-600 space-y-2 mb-4">
+              <p class="text-gray-600 mb-6 md:mb-4 md:text-sm lg:text-base">Seamless GST onboarding, compliance management and timely filings to keep your business compliant.</p>
+              <ul class="text-gray-600 space-y-3 md:space-y-2 mb-6 md:mb-4 md:text-sm lg:text-base">
                 <li class="flex items-start">
                   <i class="fas fa-check text-highlight mt-1 mr-2"></i>
                   <span>GST registration and compliance management</span>
@@ -476,8 +435,8 @@
               <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
             </div>
             
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="250">
-              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="250">
+              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 md:mb-4">
                 <i class="fas fa-chart-line text-white text-lg"></i>
               </div>
               <h3 class="text-xl font-semibold accent mb-3">Financial Advisory</h3>
@@ -499,8 +458,8 @@
               <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
             </div>
             
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="300">
-              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 md:mb-4">
                 <i class="fas fa-clipboard-check text-white text-lg"></i>
               </div>
               <h3 class="text-xl font-semibold accent mb-3">Compliance Audits</h3>
@@ -522,8 +481,8 @@
               <a href="#contact" class="text-accent font-medium inline-flex items-center">Learn more <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
             </div>
             
-            <div class="bg-primary border border-gray-100 rounded-xl p-6 sm:p-8 shadow-sm card-hover" data-aos="fade-up" data-aos-delay="350">
-              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div class="bg-primary border border-gray-100 rounded-xl p-6 md:p-8 shadow-sm card-hover transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="350">
+              <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 md:mb-4">
                 <i class="fas fa-building text-white text-lg"></i>
               </div>
               <h3 class="text-xl font-semibold accent mb-3">Business Setup Advisory</h3>
@@ -614,11 +573,11 @@
               "The guidance I received helped me clear my CA exams with confidence!"<br>
               <span class="text-sm text-gray-500">— Riya Sharma, CA Student</span>
             </blockquote>
-            <a href="#contact" class="inline-block px-8 py-3 btn-secondary rounded-lg font-semibold">
+            <a href="#contact" class="inline-block px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
               Book Your Counselling Session
-              </a>
-            </div>
-                    </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- Why Choose Us -->
@@ -643,8 +602,8 @@
                 <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
                   <i class="fas fa-award text-2xl text-white"></i>
-            </div>
-          </div>
+                </div>
+              </div>
               <h3 class="text-xl font-bold accent mb-4">Trusted Expertise</h3>
               <p class="text-gray-600 mb-4">Led by a qualified CA with 10+ years of experience in finance and education.</p>
               <ul class="space-y-2">
@@ -657,7 +616,7 @@
                   <span>Best Practices</span>
                 </li>
               </ul>
-        </div>
+            </div>
 
             <!-- Professional Integrity -->
             <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
@@ -665,7 +624,7 @@
                 <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
                   <i class="fas fa-hand-holding-heart text-2xl text-white"></i>
-          </div>
+                </div>
               </div>
               <h3 class="text-xl font-bold accent mb-4">Professional Integrity</h3>
               <p class="text-gray-600 mb-4">Highest standards of ethics and confidentiality in all our engagements.</p>
@@ -687,8 +646,8 @@
                 <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
                   <i class="fas fa-user-tie text-2xl text-white"></i>
+                </div>
               </div>
-            </div>
               <h3 class="text-xl font-bold accent mb-4">Personalized Approach</h3>
               <p class="text-gray-600 mb-4">Customized solutions tailored to your unique needs and goals.</p>
               <ul class="space-y-2">
@@ -701,7 +660,7 @@
                   <span>Dedicated Support</span>
                 </li>
               </ul>
-              </div>
+            </div>
 
             <!-- Holistic Guidance -->
             <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
@@ -709,7 +668,7 @@
                 <div class="absolute inset-0 bg-[#203731] rounded-full"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
                   <i class="fas fa-globe-asia text-2xl text-white"></i>
-            </div>
+                </div>
               </div>
               <h3 class="text-xl font-bold accent mb-4">Holistic Guidance</h3>
               <p class="text-gray-600 mb-4">Comprehensive support from tax planning to career development.</p>
@@ -947,7 +906,7 @@
             
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <!-- Contact Info Cards -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up">
+          <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up">
             <div class="bg-primary rounded-xl p-6 shadow-sm hover:shadow-md transition">
               <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <i class="fas fa-envelope icon-accent"></i>
@@ -1102,9 +1061,9 @@
   <!-- Footer -->
   <footer class="bg-accent text-white py-12">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
         <!-- Brand Section -->
-        <div class="space-y-4">
+        <div class="space-y-4 sm:col-span-2 lg:col-span-1">
           <div class="flex items-center">
             <img src="./favicon.svg" alt="CA Logo" class="h-12 w-12">
             <span class="text-xl font-bold ml-3">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
@@ -1234,12 +1193,11 @@
     <!-- Bottom Bar -->
     <div class="border-t border-white/10">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p class="text-white/60 text-sm">&copy; 2024 CA Rohan Solanki. All rights reserved.</p>
           <div class="flex space-x-6">
-            <a href="#disclaimerModal" onclick="document.getElementById('disclaimerModal').classList.remove('hidden')" class="text-white/60 hover:text-white text-sm transition">Disclaimer</a>
-            <a href="privacy-policy.html" class="text-white/60 hover:text-white text-sm transition">Privacy Policy</a>
-            <a href="terms.html" class="text-white/60 hover:text-white text-sm transition">Terms of Service</a>
+            <a href="privacy-policy.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Privacy Policy</a>
+            <a href="terms.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Terms of Service</a>
           </div>
         </div>
       </div>

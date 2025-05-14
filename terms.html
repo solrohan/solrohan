@@ -5,37 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms & Conditions - CA ROHAN VIJAY SOLANKI & ASSOCIATES</title>
   
-  <!-- Preload critical assets -->
-  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-  <link rel="preload" href="./favicon.svg" as="image">
+  <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Load stylesheets -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
-  <!-- Inline critical CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Critical CSS for performance -->
   <style>
     html, body {width: auto!important; overflow-x: hidden!important} 
     body { 
       font-family: 'Lora', serif;
       scroll-behavior: smooth;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     h1, h2, h3, h4 { 
       font-family: 'Playfair Display', serif;
       font-weight: 700;
+      contain: layout style;
     }
+    /* Performance optimized color classes */
     .accent { color: #203731; }
-    .bg-primary { background-color: #f9f7f5; }
+    .bg-primary { 
+      background-color: #f9f7f5;
+      contain: paint;
+    }
     .highlight { color: #bfa26b; }
-    .bg-accent { background-color: #203731; }
+    .bg-accent { 
+      background-color: #203731;
+      contain: paint;
+    }
     .icon-accent {color: #bfa26b;}
     .text-accent { color: #203731; }
+    /* Added content-visibility for better performance */
+    .cv-auto {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 5000px;
+    }
     .border-accent { border-color: #203731; }
     .bg-highlight { background-color: #bfa26b; }
     .border-highlight { border-color: #bfa26b; }
@@ -58,11 +74,9 @@
     }
   </style>
   
-  <!-- Defer non-critical JavaScript -->
-  <script src="https://cdn.tailwindcss.com" defer></script>
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
-      content: ['./**/*.{html,js}'],
       theme: {
         extend: {
           colors: {
@@ -71,14 +85,20 @@
             highlight: '#bfa26b'
           }
         }
-      },
-      purge: {
-        enabled: true,
-        content: ['./**/*.{html,js}']
       }
+    };
+  </script>
+  <script>
+    // Initialize AOS when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        disable: window.innerWidth < 768 // Disable on mobile for better performance
+      });
     }
   </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 </head>
 <body class="bg-primary">
   <!-- Navbar -->
@@ -98,15 +118,23 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Main Content with optimized loading -->
   <main class="pt-24 pb-12">
     <div class="container mx-auto px-4 py-8">
       <div class="max-w-4xl mx-auto">
-        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-duration="400">
+        <div class="bg-white rounded-lg shadow-lg p-8 cv-auto" data-aos="fade-up" data-aos-duration="400">
           <div class="text-center mb-12">
-            <img src="./favicon.svg" alt="CA ROHAN VIJAY SOLANKI & ASSOCIATES Logo" class="w-24 h-24 mx-auto mb-6" loading="lazy" width="96" height="96">
-            <h1 class="text-4xl font-bold text-accent mb-4">Terms & Conditions</h1>
-            <p class="text-gray-600">Last updated: March 2024</p>
+            <img 
+              src="./favicon.svg" 
+              alt="CA ROHAN VIJAY SOLANKI & ASSOCIATES Logo" 
+              class="w-24 h-24 mx-auto mb-6" 
+              loading="lazy" 
+              width="96" 
+              height="96"
+              decoding="async"
+              fetchpriority="low">
+            <h1 class="text-4xl font-bold text-accent mb-4 contain-layout">Terms & Conditions</h1>
+            <p class="text-gray-600">Last updated: May 2025</p>
           </div>
 
           <!-- Content Cards -->
@@ -253,44 +281,13 @@
               </div>
             </div>
 
-            <!-- Contact Section -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-duration="400" data-aos-offset="0">
-              <div class="flex items-center mb-6">
-                <div class="bg-accent p-3 rounded-full mr-4">
-                  <i class="fas fa-envelope text-white"></i>
-                </div>
-                <h2 class="text-2xl font-semibold accent">5. Contact Us</h2>
-              </div>
-              <div class="bg-primary rounded-xl p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 class="font-semibold text-accent mb-4">Our Location</h3>
-                    <p class="text-gray-700 mb-2">266/SH-B/40, First Floor, Pratap Nagar</p>
-                    <p class="text-gray-700 mb-2">Sec-26, Rana Sanga Road</p>
-                    <p class="text-gray-700">Jaipur-302033</p>
-                  </div>
-                  <div>
-                    <h3 class="font-semibold text-accent mb-4">Get in Touch</h3>
-                    <a href="mailto:carohansolanki@gmail.com" class="text-accent hover:text-highlight transition flex items-center mb-2">
-                      <i class="fas fa-envelope mr-2"></i>
-                      carohansolanki@gmail.com
-                    </a>
-                    <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES" target="_blank" class="text-accent hover:text-highlight transition flex items-center">
-                      <i class="fas fa-map-marker-alt mr-2"></i>
-                      View on Google Maps
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <!-- Intellectual Property -->
             <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-duration="400" data-aos-offset="0">
               <div class="flex items-center mb-6">
                 <div class="bg-accent p-3 rounded-full mr-4">
                   <i class="fas fa-copyright text-white"></i>
                 </div>
-                <h2 class="text-2xl font-semibold accent">6. Intellectual Property</h2>
+                <h2 class="text-2xl font-semibold accent">5. Intellectual Property</h2>
               </div>
               <div class="bg-primary rounded-xl p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -344,7 +341,7 @@
                 <div class="bg-accent p-3 rounded-full mr-4">
                   <i class="fas fa-shield-alt text-white"></i>
                 </div>
-                <h2 class="text-2xl font-semibold accent">7. Limitation of Liability</h2>
+                <h2 class="text-2xl font-semibold accent">6. Limitation of Liability</h2>
               </div>
               <div class="bg-primary rounded-xl p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -398,7 +395,7 @@
                 <div class="bg-accent p-3 rounded-full mr-4">
                   <i class="fas fa-handshake-slash text-white"></i>
                 </div>
-                <h2 class="text-2xl font-semibold accent">8. Termination</h2>
+                <h2 class="text-2xl font-semibold accent">7. Termination</h2>
               </div>
               <div class="bg-primary rounded-xl p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -452,7 +449,7 @@
                 <div class="bg-accent p-3 rounded-full mr-4">
                   <i class="fas fa-balance-scale text-white"></i>
                 </div>
-                <h2 class="text-2xl font-semibold accent">9. Governing Law</h2>
+                <h2 class="text-2xl font-semibold accent">8. Governing Law</h2>
               </div>
               <div class="bg-primary rounded-xl p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -499,100 +496,259 @@
                 </div>
               </div>
             </div>
+
+            <!-- Contact Section -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-duration="400" data-aos-offset="0">
+              <div class="flex items-center mb-6">
+                <div class="bg-accent p-3 rounded-full mr-4">
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h2 class="text-2xl font-semibold accent">9. Contact Us</h2>
+              </div>
+              <div class="bg-primary rounded-xl p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 class="font-semibold text-accent mb-4">Our Location</h3>
+                    <p class="text-gray-700 mb-2">266/SH-B/40, First Floor, Pratap Nagar</p>
+                    <p class="text-gray-700 mb-2">Sec-26, Rana Sanga Road</p>
+                    <p class="text-gray-700">Jaipur-302033</p>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-accent mb-4">Get in Touch</h3>
+                    <a href="mailto:carohansolanki@gmail.com" class="text-accent hover:text-highlight transition flex items-center mb-2">
+                      <i class="fas fa-envelope mr-2"></i>
+                      carohansolanki@gmail.com
+                    </a>
+                    <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES" target="_blank" class="text-accent hover:text-highlight transition flex items-center">
+                      <i class="fas fa-map-marker-alt mr-2"></i>
+                      View on Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
-  </main>
+  </div>
+</main>
 
-  <!-- Footer -->
-  <footer class="bg-accent text-white py-12">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-        <!-- Brand Section -->
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <img src="./favicon.svg" alt="CA Logo" class="h-12 w-12" width="48" height="48" loading="lazy">
-            <span class="text-xl font-bold ml-3">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+<!-- Footer -->
+<footer class="bg-accent text-white py-12">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <!-- Brand Section -->
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <img 
+                  src="./favicon.svg" 
+                  alt="CA Logo" 
+                  class="h-12 w-12" 
+                  loading="lazy" 
+                  decoding="async" 
+                  width="48" 
+                  height="48"
+                  fetchpriority="low">
+                <span class="text-xl font-bold ml-3 contain-layout">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+              </div>
+              <p class="text-white/60">Your trusted partner in financial excellence and professional growth.</p>
+              <div class="flex space-x-4">
+                <a href="https://www.youtube.com/@carohansolanki" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/rohansolankiofficial" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:carohansolanki@gmail.com" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/CA+ROHAN+VIJAY+SOLANKI+%26+ASSOCIATES" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.justdial.com/Jaipur/Ca-Rohan-Vijay-Solanki-Associates-Chartered-Accountants-Sec-29-Pratap-Nagar/0141PX141-X141-230109160024-F8V2_BZDET" target="_blank" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+                  <i class="fas fa-phone-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+              <h4 class="text-lg font-semibold mb-6 flex items-center">
+                <i class="fas fa-briefcase mr-2 text-highlight"></i>
+                Our Services
+              </h4>
+              <ul class="space-y-3">
+                <li>
+                  <a href="/#services" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Tax Planning & Compliance
+                  </a>
+                </li>
+                <li>
+                  <a href="/#services" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Audit & Assurance
+                  </a>
+                </li>
+                <li>
+                  <a href="/#services" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    GST Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/#services" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Financial Advisory
+                  </a>
+                </li>
+                <li>
+                  <a href="/#services" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Business Setup
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Career Counselling -->
+            <div>
+              <h4 class="text-lg font-semibold mb-6 flex items-center">
+                <i class="fas fa-graduation-cap mr-2 text-highlight"></i>
+                Career Guidance
+              </h4>
+              <ul class="space-y-3">
+                <li>
+                  <a href="/#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    CA Path Guidance
+                  </a>
+                </li>
+                <li>
+                  <a href="/#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Exam Strategies
+                  </a>
+                </li>
+                <li>
+                  <a href="/#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Skill Development
+                  </a>
+                </li>
+                <li>
+                  <a href="/#career-counselling" class="text-white/80 hover:text-white transition flex items-center">
+                    <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
+                    Professional Mentoring
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h4 class="text-lg font-semibold mb-6 flex items-center">
+                <i class="fas fa-address-card mr-2 text-highlight"></i>
+                Contact Info
+              </h4>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-map-marker-alt text-highlight mt-1 mr-3"></i>
+                  <span class="text-white/80">266/SH-B/40, First Floor, Pratap Nagar, Sec-26, Rana Sanga Road, Jaipur-302033</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-envelope text-highlight mr-3"></i>
+                  <a href="mailto:carohansolanki@gmail.com" class="text-white/80 hover:text-white transition">carohansolanki@gmail.com</a>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-highlight mr-3"></i>
+                  <span class="text-white/80">Mon-Fri: 10:00 AM - 6:00 PM</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-calendar-alt text-highlight mr-3"></i>
+                  <a href="https://calendly.com/rohanvijaysolanki" target="_blank" class="text-white/80 hover:text-white transition">Book a Consultation</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <p class="text-white/60">Your trusted partner in financial excellence and professional growth.</p>
         </div>
 
-        <!-- Quick Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-6 flex items-center">
-            <i class="fas fa-link mr-2 text-highlight"></i>
-            Quick Links
-          </h4>
-          <ul class="space-y-3">
-            <li>
-              <a href="/" class="text-white/80 hover:text-white transition flex items-center">
-                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/privacy-policy" class="text-white/80 hover:text-white transition flex items-center">
-                <i class="fas fa-chevron-right text-highlight mr-2 text-sm"></i>
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div>
-          <h4 class="text-lg font-semibold mb-6 flex items-center">
-            <i class="fas fa-address-card mr-2 text-highlight"></i>
-            Contact Info
-          </h4>
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <i class="fas fa-map-marker-alt text-highlight mt-1 mr-3"></i>
-              <span class="text-white/80">266/SH-B/40, First Floor, Pratap Nagar, Sec-26, Rana Sanga Road, Jaipur-302033</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-envelope text-highlight mr-3"></i>
-              <a href="mailto:carohansolanki@gmail.com" class="text-white/80 hover:text-white transition">carohansolanki@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Bottom Bar -->
-      <div class="border-t border-white/10 pt-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-white/60 text-sm">&copy; 2024 CA Rohan Solanki. All rights reserved.</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="/" class="text-white/60 hover:text-white text-sm transition">Home</a>
-            <a href="/privacy-policy" class="text-white/60 hover:text-white text-sm transition">Privacy Policy</a>
+          <div class="flex space-x-6">
+            <a href="privacy-policy.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Privacy Policy</a>
+            <a href="terms.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Terms of Service</a>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+    
+<button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-accent text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-  <!-- Move scripts to bottom of body -->
-  <script>
-    // Initialize AOS animation with optimized settings
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        disable: false, // Enable animations on all devices
-        startEvent: 'DOMContentLoaded', // Initialize immediately
-        mirror: false,
-        anchorPlacement: 'top-bottom',
-        offset: 0, // Start animations immediately
-        delay: 0 // No delay for animations
-      });
+<script>
+  // Optimized initialization with performance improvements
+  document.addEventListener('DOMContentLoaded', function() {
+    // IntersectionObserver for scroll-based updates
+    const observerOptions = {
+      threshold: [0, 0.5],
+      rootMargin: '-50px 0px'
+    };
 
-      // Force AOS to refresh on load
-      window.addEventListener('load', function() {
-        AOS.refresh();
+    // Observe navbar
+    const nav = document.querySelector('nav');
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        nav.classList.toggle('shadow-md', !entry.isIntersecting);
+        nav.classList.toggle('py-2', !entry.isIntersecting);
+        nav.classList.toggle('py-3', entry.isIntersecting);
       });
+    }, observerOptions);
+
+    // Create and observe sentinel element for navbar
+    const navSentinel = document.createElement('div');
+    navSentinel.style.height = '1px';
+    document.body.prepend(navSentinel);
+    navObserver.observe(navSentinel);
+
+    // Back to Top button with Intersection Observer
+    const backToTopButton = document.getElementById('backToTop');
+    const backToTopObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        backToTopButton.classList.toggle('opacity-0', entry.isIntersecting);
+        backToTopButton.classList.toggle('invisible', entry.isIntersecting);
+      });
+    }, { threshold: 0, rootMargin: '300px 0px 0px 0px' });
+
+    // Observe the same sentinel for back to top
+    backToTopObserver.observe(navSentinel);
+
+    // Smooth scroll with requestAnimationFrame
+    backToTopButton.addEventListener('click', () => {
+      const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 8);
+        }
+      };
+      scrollToTop();
     });
-  </script>
+
+    // Initialize AOS with performance optimizations
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      disable: window.innerWidth < 768 // Disable on mobile
+    });
+  });
+</script>
 </body>
-</html> 
+</html>
