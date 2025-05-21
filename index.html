@@ -252,7 +252,7 @@
     <nav class="fixed top-0 inset-x-0 bg-white shadow-sm z-40 transition-all duration-300">
       <div class="max-w-screen-xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href="#" class="text-lg sm:text-xl font-bold accent flex items-center">
+          <a href="#" class="text-lg sm:text-xl font-bold accent flex items-center flex-shrink-0">
             <img src="./favicon.svg" alt="CA Logo" class="h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3">
             <span class="hidden sm:inline">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
             <span class="sm:hidden">CA ROHAN SOLANKI</span>
@@ -261,15 +261,17 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-        </button>
-          <ul id="navMenu" class="hidden xl:flex space-x-4 xl:space-x-6 text-gray-700">
-          <li><a href="#services" class="nav-link hover:text-accent">Services</a></li>
-          <li><a href="#career-counselling" class="nav-link hover:text-accent">Counselling</a></li>
-          <li><a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a></li>
-          <li><a href="#contact" class="nav-link hover:text-accent">Contact</a></li>
-          <li><a href="#contact" class="hidden md:flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">Book Consultation</a></li>
-        </ul>
-      </div>
+          </button>
+          <div class="hidden xl:flex items-center space-x-6">
+            <ul class="flex items-center space-x-6 text-gray-700">
+              <li><a href="#services" class="nav-link hover:text-accent py-2 flex items-center"><i class="fas fa-briefcase mr-1"></i> Services</a></li>
+              <li><a href="#career-counselling" class="nav-link hover:text-accent py-2 flex items-center"><i class="fas fa-graduation-cap mr-1"></i> Counselling</a></li>
+              <li><a href="#testimonials" class="nav-link hover:text-accent py-2 flex items-center"><i class="fas fa-star mr-1"></i> Testimonials</a></li>
+              <li><a href="#contact" class="nav-link hover:text-accent py-2 flex items-center"><i class="fas fa-envelope mr-1"></i> Contact</a></li>
+              <li><a href="#contact" class="flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"><i class="fas fa-calendar-check mr-2"></i> Book Consultation</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="mobileMenu" class="hidden block xl:hidden px-4 pb-4 bg-white shadow-lg border-t border-gray-100">
         <ul class="space-y-3 py-2">
@@ -574,7 +576,8 @@
               "The guidance I received helped me clear my CA exams with confidence!"<br>
               <span class="text-sm text-gray-500">— Riya Sharma, CA Student</span>
             </blockquote>
-            <a href="#contact" class="inline-block px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+            <a href="#contact" class="inline-flex items-center px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+              <i class="fas fa-calendar-alt mr-2"></i>
               Book Your Counselling Session
             </a>
           </div>
