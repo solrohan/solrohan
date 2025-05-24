@@ -356,107 +356,87 @@
   <!-- Add blur wrapper -->
   <div id="contentWrapper" class="blur-content">
     <!-- Navbar -->
-    <nav class="fixed top-0 inset-x-0 bg-white/80 backdrop-blur-lg shadow-sm z-40 transition-all duration-300">
-      <div class="max-w-screen-xl mx-auto px-4 py-3">
-        <div class="flex items-center justify-between">
-          <a href="#" class="text-lg sm:text-xl font-bold accent flex items-center flex-shrink-0 group">
+    <nav class="fixed top-0 inset-x-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo and Name -->
+          <a href="#" class="flex items-center space-x-3 group">
             <div class="relative">
               <div class="absolute -inset-2 bg-accent/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-              <img src="./favicon.svg" alt="CA Logo" class="h-8 w-8 sm:h-10 sm:w-10 relative">
+              <img src="./favicon.svg" alt="CA Logo" class="h-10 w-10 relative">
             </div>
-            <span class="hidden sm:inline ml-3">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
-            <span class="sm:hidden ml-3">CA ROHAN SOLANKI</span>
+            <div class="hidden sm:block">
+              <span class="text-lg font-bold accent">CA ROHAN VIJAY SOLANKI & ASSOCIATES</span>
+            </div>
+            <div class="sm:hidden">
+              <span class="text-lg font-bold accent">CA ROHAN SOLANKI</span>
+            </div>
           </a>
-          <button id="menuBtn" class="block xl:hidden focus:outline-none p-2 hover:bg-accent/5 rounded-lg transition-colors" aria-label="Toggle menu">
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-6">
+            <a href="#services" class="nav-link text-gray-700 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-briefcase text-sm"></i>
+              <span>Services</span>
+            </a>
+            <a href="#career-counselling" class="nav-link text-gray-700 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-graduation-cap text-sm"></i>
+              <span>Counselling</span>
+            </a>
+            <a href="#testimonials" class="nav-link text-gray-700 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-star text-sm"></i>
+              <span>Testimonials</span>
+            </a>
+            <a href="#contact" class="nav-link text-gray-700 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-envelope text-sm"></i>
+              <span>Contact</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center px-6 py-2.5 bg-accent text-white rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg ml-4">
+              <i class="fas fa-calendar-check mr-2"></i>
+              Book Consultation
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menuBtn" class="lg:hidden p-2 rounded-lg hover:bg-accent/5 transition-colors" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          <div class="hidden xl:flex items-center space-x-1">
-            <ul class="flex items-center">
-              <li class="group relative px-3">
-                <a href="#services" class="nav-link py-2 flex items-center space-x-2 relative">
-                  <i class="fas fa-briefcase text-accent/80 group-hover:text-accent transition-colors"></i>
-                  <span class="relative">
-                    Services
-                    <span class="absolute inset-x-0 bottom-0 h-0.5 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </span>
-                </a>
-              </li>
-              <li class="group relative px-3">
-                <a href="#career-counselling" class="nav-link py-2 flex items-center space-x-2">
-                  <i class="fas fa-graduation-cap text-accent/80 group-hover:text-accent transition-colors"></i>
-                  <span class="relative">
-                    Counselling
-                    <span class="absolute inset-x-0 bottom-0 h-0.5 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </span>
-                </a>
-              </li>
-              <li class="group relative px-3">
-                <a href="#testimonials" class="nav-link py-2 flex items-center space-x-2">
-                  <i class="fas fa-star text-accent/80 group-hover:text-accent transition-colors"></i>
-                  <span class="relative">
-                    Testimonials
-                    <span class="absolute inset-x-0 bottom-0 h-0.5 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </span>
-                </a>
-              </li>
-              <li class="group relative px-3">
-                <a href="#contact" class="nav-link py-2 flex items-center space-x-2">
-                  <i class="fas fa-envelope text-accent/80 group-hover:text-accent transition-colors"></i>
-                  <span class="relative">
-                    Contact
-                    <span class="absolute inset-x-0 bottom-0 h-0.5 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </span>
-                </a>
-              </li>
-              <li class="pl-3">
-                <a href="#contact" class="flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg">
-                  <i class="fas fa-calendar-check mr-2"></i>
-                  Book Consultation
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-      <div id="mobileMenu" class="hidden block xl:hidden px-4 pb-4 bg-white shadow-lg border-t border-gray-100">
-        <ul class="space-y-3 py-2">
-          <li>
-            <a href="#services" class="flex items-center px-3 py-2.5 hover:bg-accent/5 rounded-lg transition-all group" onclick="closeMobileMenu()">
-              <i class="fas fa-briefcase text-accent/80 group-hover:text-accent transition-colors w-5"></i>
-              <span class="ml-2">Services</span>
-            </a>
-          </li>
-          <li>
-            <a href="#career-counselling" class="flex items-center px-3 py-2.5 hover:bg-accent/5 rounded-lg transition-all group" onclick="closeMobileMenu()">
-              <i class="fas fa-graduation-cap text-accent/80 group-hover:text-accent transition-colors w-5"></i>
-              <span class="ml-2">Counselling</span>
-            </a>
-          </li>
-          <li>
-            <a href="#testimonials" class="flex items-center px-3 py-2.5 hover:bg-accent/5 rounded-lg transition-all group" onclick="closeMobileMenu()">
-              <i class="fas fa-star text-accent/80 group-hover:text-accent transition-colors w-5"></i>
-              <span class="ml-2">Testimonials</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="flex items-center px-3 py-2.5 hover:bg-accent/5 rounded-lg transition-all group" onclick="closeMobileMenu()">
-              <i class="fas fa-envelope text-accent/80 group-hover:text-accent transition-colors w-5"></i>
-              <span class="ml-2">Contact</span>
-            </a>
-          </li>
-          <li class="pt-2">
-            <a href="#contact" class="flex items-center justify-center w-full px-4 py-3 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg" onclick="closeMobileMenu()">
-              <i class="fas fa-calendar-check mr-2"></i>
-              Book Consultation
-            </a>
-          </li>
-        </ul>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-4 space-y-3">
+          <a href="#services" class="flex items-center px-4 py-2 text-gray-700 hover:bg-accent/5 rounded-lg transition-colors" onclick="closeMobileMenu()">
+            <i class="fas fa-briefcase text-sm w-5"></i>
+            <span class="ml-2">Services</span>
+          </a>
+          <a href="#career-counselling" class="flex items-center px-4 py-2 text-gray-700 hover:bg-accent/5 rounded-lg transition-colors" onclick="closeMobileMenu()">
+            <i class="fas fa-graduation-cap text-sm w-5"></i>
+            <span class="ml-2">Counselling</span>
+          </a>
+          <a href="#testimonials" class="flex items-center px-4 py-2 text-gray-700 hover:bg-accent/5 rounded-lg transition-colors" onclick="closeMobileMenu()">
+            <i class="fas fa-star text-sm w-5"></i>
+            <span class="ml-2">Testimonials</span>
+          </a>
+          <a href="#contact" class="flex items-center px-4 py-2 text-gray-700 hover:bg-accent/5 rounded-lg transition-colors" onclick="closeMobileMenu()">
+            <i class="fas fa-envelope text-sm w-5"></i>
+            <span class="ml-2">Contact</span>
+          </a>
+          <a href="#contact" class="flex items-center justify-center px-4 py-2.5 bg-accent text-white rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300" onclick="closeMobileMenu()">
+            <i class="fas fa-calendar-check mr-2"></i>
+            Book Consultation
+          </a>
+        </div>
       </div>
     </nav>
 
-    <main class="pt-16 sm:pt-20">
+    <!-- Add some spacing below navbar -->
+    <div class="h-16"></div>
+
+    <main class="pt-0">
       <!-- Header / Hero -->
       <header class="relative overflow-hidden bg-white">
         <!-- Background Pattern -->
