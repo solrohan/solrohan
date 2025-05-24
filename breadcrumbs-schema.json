@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://www.carohansolanki.com"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://www.carohansolanki.com/#services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Career Counselling",
+    "item": "https://www.carohansolanki.com/#career-counselling"
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Contact",
+    "item": "https://www.carohansolanki.com/#contact"
+  }]
+} 

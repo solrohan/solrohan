@@ -97,7 +97,7 @@
         once: true,
         disable: window.innerWidth < 768 // Disable on mobile for better performance
       });
-    }
+    });
   </script>
 </head>
 <body class="bg-primary">
@@ -681,6 +681,7 @@
           <div class="flex space-x-6">
             <a href="privacy-policy.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Privacy Policy</a>
             <a href="terms.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Terms of Service</a>
+            <a href="cookies.html" class="text-white/60 hover:text-white text-sm transition hover:underline">Cookie Policy</a>
           </div>
         </div>
       </div>
@@ -719,8 +720,8 @@
 
     // Back to Top button with Intersection Observer
     const backToTopButton = document.getElementById('backToTop');
-    const backToTopObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const backToTopObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         backToTopButton.classList.toggle('opacity-0', entry.isIntersecting);
         backToTopButton.classList.toggle('invisible', entry.isIntersecting);
       });

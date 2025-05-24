@@ -1,0 +1,6 @@
+Contact: mailto:carohansolanki@gmail.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.carohansolanki.com/.well-known/security.txt
+Policy: https://www.carohansolanki.com/security-policy
+Hiring: https://www.carohansolanki.com/#contact 

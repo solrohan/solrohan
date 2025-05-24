@@ -1,21 +1,32 @@
 {
-  "name": "CA Rohan Solanki ",
+  "name": "CA ROHAN VIJAY SOLANKI & ASSOCIATES",
   "short_name": "CA.RS",
+  "description": "Leading Chartered Accountant firm in Jaipur offering expert tax planning, GST, audit services & career counselling",
   "icons": [
     {
-      "src": "/https://carohansolanki.com/web-app-manifest-192x192.png",
-      "sizes": "192x192",
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
-      "src": "/https://carohansolanki.com/web-app-manifest-512x512.png",
-      "sizes": "512x512",
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#fcf9f9",
-  "display": "standalone"
+  "theme_color": "#203731",
+  "background_color": "#f9f7f5",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en"
 }

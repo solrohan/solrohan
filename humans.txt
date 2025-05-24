@@ -1,0 +1,13 @@
+/* TEAM */
+Owner & Chartered Accountant: CA Rohan Vijay Solanki
+Location: Jaipur, Rajasthan, India
+Contact: carohansolanki@gmail.com
+
+/* SITE */
+Last update: 2024/03/19
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript
+Components: TailwindCSS, Font Awesome
+Software: Visual Studio Code, Git
+Location: Pratap Nagar, Jaipur 

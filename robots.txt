@@ -1,0 +1,60 @@
+# www.carohansolanki.com robots.txt
+
+# Global rules
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Sitemaps
+Sitemap: https://www.carohansolanki.com/sitemap.xml
+
+# Disallow patterns
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*?*
+Disallow: /*?
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /search
+Disallow: /404.html
+Disallow: /500.html
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /node_modules/
+
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: / 
